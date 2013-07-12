@@ -1,0 +1,2 @@
+bde_exp_trd.exe -I="Index File Exp Trd" -w
+bde_exp_trd.exe -I="Index File Exp Trd" -w -DA=01.01.2013 -DE=30.01.2013

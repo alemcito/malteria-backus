@@ -1,0 +1,230 @@
+#Datos Tina 1	
+PLC01:AnI:N100:Val/x/t	
+PLC01:AnI:N110:Val/x/t	
+PLC01:AnI:N167:Val/x/t	
+PLC01:VLT:N001_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N101_OUT:Val/x/t	
+PLC01:AnI:N100:Val/x/t	
+PLC01:AnI:N110:Val/x/t	
+PLC01:AnI:N167:Val/x/t	
+PLC01:VLT:N001_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N101_OUT:Val/x/t	
+PLC01:Seq:N003:Val/x/t	
+#Datos Tina 2	
+PLC01:AnI:N099:Val/x/t	
+PLC01:AnI:N109:Val/x/t	
+PLC01:AnI:N168:Val/x/t	
+PLC01:VLT:N002_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N102_OUT:Val/x/t	
+PLC01:Seq:N004:Val/x/t	
+#Datos Tina 3	
+PLC01:AnI:N098:Val/x/t	
+PLC01:AnI:N108:Val/x/t
+PLC01:AnI:N169:Val/x/t	
+PLC01:VLT:N003_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N103_OUT:Val/x/t	
+PLC01:Seq:N005:Val/x/t	
+#Datos Tina 4	
+PLC01:AnI:N097:Val/x/t	
+PLC01:AnI:N107:Val/x/t	
+PLC01:AnI:N170:Val/x/t	
+PLC01:VLT:N004_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N104_OUT:Val/x/t	
+PLC01:Seq:N006:Val/x/t	
+#Datos Tina 5	
+PLC01:AnI:N096:Val/x/t	
+PLC01:AnI:N106:Val/x/t	
+PLC01:AnI:N171:Val/x/t	
+PLC01:VLT:N005_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N105_OUT:Val/x/t	
+PLC01:Seq:N007:Val/x/t	
+#Datos Tina 6	
+PLC01:AnI:N095:Val/x/t	
+PLC01:AnI:N105:Val/x/t	
+PLC01:AnI:N172:Val/x/t	
+PLC01:VLT:N006_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N106_OUT:Val/x/t	
+PLC01:Seq:N008:Val/x/t	
+#Datos Tina 7	
+PLC01:AnI:N094:Val/x/t	
+PLC01:AnI:N104:Val/x/t	
+PLC01:AnI:N173:Val/x/t	
+PLC01:VLT:N007_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N107_OUT:Val/x/t	
+PLC01:Seq:N009:Val/x/t	
+#Datos Tina 8	
+PLC01:AnI:N093:Val/x/t	
+PLC01:AnI:N103:Val/x/t	
+PLC01:AnI:N174:Val/x/t	
+PLC01:VLT:N008_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N108_OUT:Val/x/t	
+PLC01:Seq:N010:Val/x/t	
+#Datos Tina 9	
+PLC01:AnI:N092:Val/x/t	
+PLC01:AnI:N102:Val/x/t	
+PLC01:AnI:N175:Val/x/t	
+PLC01:VLT:N009_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N109_OUT:Val/x/t	
+PLC01:Seq:N011:Val/x/t	
+#Datos Tina 10	
+PLC01:AnI:N091:Val/x/t	
+PLC01:AnI:N101:Val/x/t	
+PLC01:AnI:N176:Val/x/t	
+PLC01:VLT:N010_OUT:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC01:VLT:N110_OUT:Val/x/t	
+PLC01:Seq:N012:Val/x/t	
+#Datos Tina 11	
+PLC02:AnI:N001:Val/x/t	
+PLC02:AnI:N005:Val/x/t	
+PLC02:VLT:N003:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC02:VLT:N103_OUT:Val/x/t	
+PLC02:Seq:N001:Val/x/t	
+#Datos Tina 12	
+PLC02:AnI:N002:Val/x/t	
+PLC02:AnI:N006:Val/x/t	
+PLC02:VLT:N004:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC02:VLT:N104_OUT:Val/x/t	
+PLC02:Seq:N002:Val/x/t	
+#Datos Tina 13	
+PLC02:AnI:N003:Val/x/t	
+PLC02:AnI:N007:Val/x/t	
+PLC02:VLT:N005:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC02:VLT:N105_OUT:Val/x/t	
+PLC02:Seq:N003:Val/x/t	
+#Datos Tina 14	
+PLC02:AnI:N004:Val/x/t	
+PLC02:AnI:N008:Val/x/t	
+PLC02:VLT:N006:Val/x/t	
+PLC01:AnI:N177:Val/x/t	
+PLC02:VLT:N106_OUT:Val/x/t	
+PLC02:Seq:N004:Val/x/t	
+#Datos Caja Germinacion 1	
+PLC01:AnI:N003:Val/x/t	
+PLC01:AnI:N006:Val/x/t	
+PLC01:AnI:N025:Val/x/t	
+PLC01:Seq:N014:Val/x/t	
+#Datos Caja Germinacion 2	
+PLC01:AnI:N009:Val/x/t	
+PLC01:AnI:N012:Val/x/t	
+PLC01:AnI:N026:Val/x/t	
+PLC01:Seq:N015:Val/x/t	
+#Datos Caja Germinacion 3	
+PLC01:AnI:N015:Val/x/t	
+PLC01:AnI:N018:Val/x/t	
+PLC01:AnI:N027:Val/x/t	
+PLC01:Seq:N016:Val/x/t	
+#Datos Caja Germinacion 4	
+PLC01:AnI:N021:Val/x/t	
+PLC01:AnI:N024:Val/x/t	
+PLC01:AnI:N028:Val/x/t	
+PLC01:Seq:N017:Val/x/t	
+#Datos Caja Germinacion 5	
+PLC01:AnI:N035:Val/x/t	
+PLC01:AnI:N038:Val/x/t	
+PLC01:AnI:N057:Val/x/t	
+PLC01:Seq:N018:Val/x/t	
+#Datos Caja Germinacion 6	
+PLC01:AnI:N041:Val/x/t	
+PLC01:AnI:N044:Val/x/t	
+PLC01:AnI:N058:Val/x/t	
+PLC01:Seq:N019:Val/x/t	
+#Datos Caja Germinacion 7	
+PLC01:AnI:N047:Val/x/t	
+PLC01:AnI:N050:Val/x/t	
+PLC01:AnI:N059:Val/x/t	
+PLC01:Seq:N020:Val/x/t	
+#Datos Caja Germinacion 8	
+PLC01:AnI:N053:Val/x/t	
+PLC01:AnI:N056:Val/x/t	
+PLC01:AnI:N060:Val/x/t	
+PLC01:Seq:N021:Val/x/t	
+#Datos Caja Germinacion 9	
+PLC01:AnI:N065:Val/x/t	
+PLC01:AnI:N068:Val/x/t	
+PLC01:AnI:N069:Val/x/t	
+PLC02:Seq:N005:Val/x/t	
+#Datos Caja Germinacion 10	
+PLC01:AnI:N070:Val/x/t	
+PLC01:AnI:N073:Val/x/t	
+PLC01:AnI:N074:Val/x/t	
+PLC02:Seq:N006:Val/x/t	
+#Datos Caja Germinacion 11	
+PLC01:AnI:N075:Val/x/t	
+PLC01:AnI:N078:Val/x/t	
+PLC01:AnI:N079:Val/x/t	
+PLC02:Seq:N007:Val/x/t	
+#Datos Caja Germinacion 12	
+PLC01:AnI:N080:Val/x/t	
+PLC01:AnI:N083:Val/x/t	
+PLC01:AnI:N084:Val/x/t	
+PLC02:Seq:N008:Val/x/t	
+#Datos Caja Germinacion 13	
+PLC01:AnI:N085:Val/x/t	
+PLC01:AnI:N088:Val/x/t	
+PLC01:AnI:N089:Val/x/t	
+PLC02:Seq:N009:Val/x/t	
+#Datos Caja Germinacion 14	
+PLC02:AnI:N013:Val/x/t	
+PLC02:AnI:N014:Val/x/t	
+PLC02:VLT:N009_OUT:Val/x/t	
+PLC02:Seq:N014:Val/x/t	
+#Datos Caja Germinacion 15	
+PLC02:AnI:N021:Val/x/t	
+PLC02:AnI:N022:Val/x/t	
+PLC02:VLT:N012_OUT:Val/x/t	
+PLC02:Seq:N015:Val/x/t	
+#Datos Caja Germinacion 16	
+PLC02:AnI:N029:Val/x/t	
+PLC02:AnI:N030:Val/x/t	
+PLC02:VLT:N014_OUT:Val/x/t	
+PLC02:Seq:N016:Val/x/t	
+#Datos Horno A	
+PLC01:AnI:N185:Val/x/t	
+PLC01:AnI:N142:Val/x/t	
+PLC01:AnI:N143:Val/x/t	
+PLC01:AnI:N147:Val/x/t	
+PLC01:AnI:N146:Val/x/t	
+PLC01:AnI:N145:Val/x/t	
+PLC01:PID:N029_32_OUT:Val/x/t	
+PLC01:Seq:N028:Val/x/t	
+#Datos Horno B	
+PLC01:AnI:N186:Val/x/t	
+PLC01:AnI:N151:Val/x/t	
+PLC01:AnI:N152:Val/x/t	
+PLC01:AnI:N156:Val/x/t	
+PLC01:AnI:N155:Val/x/t	
+PLC01:AnI:N154:Val/x/t	
+PLC01:PID:N033_36_OUT:Val/x/t	
+PLC01:Seq:N029:Val/x/t	
+#Datos Horno C	
+PLC01:AnI:N115:Val/x/t	
+PLC01:AnI:N116:Val/x/t	
+PLC01:AnI:N117:Val/x/t	
+PLC01:AnI:N121:Val/x/t	
+PLC01:AnI:N120:Val/x/t	
+PLC01:AnI:N119:Val/x/t	
+PLC01:AnI:N139:Val/x/t	
+PLC01:Seq:N030:Val/x/t	
+#Datos Horno D	
+PLC01:AnI:N124:Val/x/t	
+PLC01:AnI:N125:Val/x/t	
+PLC01:AnI:N126:Val/x/t	
+PLC01:AnI:N130:Val/x/t	
+PLC01:AnI:N129:Val/x/t	
+PLC01:AnI:N128:Val/x/t	
+PLC01:AnI:N139:Val/x/t	
+PLC01:Seq:N031:Val/x/t	

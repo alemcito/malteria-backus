@@ -1,0 +1,1 @@
+Coloque los plug-ins no utilizados en el directorio opcional.

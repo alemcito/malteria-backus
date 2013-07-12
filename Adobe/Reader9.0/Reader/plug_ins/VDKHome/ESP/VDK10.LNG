@@ -1,0 +1,1115 @@
+# @(#)Copyright (C) 1987-1994 Verity, Inc.
+# generic.lng   1.1 - 8/24/94
+# @(#)
+# Example language definition file for Spanish
+#
+$control:       1
+
+language:
+{
+ table: CTYPE
+ {
+  text:   0 "\x00\x00\x00\x00\x00\x00\x00\x00\x00\x08\x08\x08\x08\x08\x00\x00"
+  text:  16 "\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+  text:  32 "\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+  text:  48 "\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x00\x00\x00\x00\x00\x00"
+  text:  64 "\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01"
+  text:  80 "\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x01"
+  text:  96 "\x00\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02"
+  text: 112 "\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x00\x00\x00\x00\x00"
+  text: 128 "\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01"
+  text: 144 "\x01\x02\x01\x02\x02\x02\x02\x02\x02\x01\x01\x02\x00\x01\x00\x00"
+  text: 160 "\x02\x02\x02\x02\x02\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+  text: 176 "\x00\x00\x00\x00\x00\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00"
+  text: 192 "\x00\x00\x00\x00\x00\x00\x02\x01\x00\x00\x00\x00\x00\x00\x00\x00"
+  text: 208 "\x02\x01\x01\x01\x01\x00\x01\x01\x01\x00\x00\x00\x00\x00\x01\x00"
+  text: 224 "\x01\x02\x01\x01\x02\x01\x00\x02\x01\x01\x01\x01\x02\x01\x00\x00"
+  text: 240 "\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+ }
+ table: TOUPPER
+ {
+  text:   0 "\x00\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0A\x0B\x0C\x0D\x0E\x0F"
+  text:  16 "\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1A\x1B\x1C\x1D\x1E\x1F"
+  text:  32 "\x20\x21\x22\x23\x24\x25\x26\x27\x28\x29\x2A\x2B\x2C\x2D\x2E\x2F"
+  text:  48 "\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x3A\x3B\x3C\x3D\x3E\x3F"
+  text:  64 "\x40\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4A\x4B\x4C\x4D\x4E\x4F"
+  text:  80 "\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5A\x5B\x5C\x5D\x5E\x5F"
+  text:  96 "\x60\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4A\x4B\x4C\x4D\x4E\x4F"
+  text: 112 "\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5A\x7B\x7C\x7D\x7E\x7F"
+  text: 128 "\x80\x9A\x90\xB6\x8E\xB7\x8F\x80\xD2\xD3\xD4\xD8\xD7\xDE\x8E\x8F"
+  text: 144 "\x90\x92\x92\xE2\x99\xE3\xEA\xEB\x98\x99\x9A\x9D\x9C\x9D\x9E\x9F"
+  text: 160 "\xB5\xD6\xE0\xE9\xA5\xA5\xA6\xA7\xA8\xA9\xAA\xAB\xAC\xAD\xAE\xAF"
+  text: 176 "\xB0\xB1\xB2\xB3\xB4\xB5\xB6\xB7\xB8\xB9\xBA\xBB\xBC\xBD\xBE\xBF"
+  text: 192 "\xC0\xC1\xC2\xC3\xC4\xC5\xC7\xC7\xC8\xC9\xCA\xCB\xCC\xCD\xCE\xCF"
+  text: 208 "\xD1\xD1\xD2\xD3\xD4\xD5\xD6\xD7\xD8\xD9\xDA\xDB\xDC\xDD\xDE\xDF"
+  text: 224 "\xE0\xE1\xE2\xE3\xE5\xE5\xE6\xE8\xE8\xE9\xEA\xEB\xED\xED\xEE\xEF"
+  text: 240 "\xF0\xF1\xF2\xF3\xF4\xF5\xF6\xF7\xF8\xF9\xFA\xFB\xFC\xFD\xFE\xFF"
+ }
+ table: TOLOWER
+ {
+  text:   0 "\x00\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0A\x0B\x0C\x0D\x0E\x0F"
+  text:  16 "\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1A\x1B\x1C\x1D\x1E\x1F"
+  text:  32 "\x20\x21\x22\x23\x24\x25\x26\x27\x28\x29\x2A\x2B\x2C\x2D\x2E\x2F"
+  text:  48 "\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x3A\x3B\x3C\x3D\x3E\x3F"
+  text:  64 "\x40\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F"
+  text:  80 "\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A\x5B\x5C\x5D\x5E\x5F"
+  text:  96 "\x60\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F"
+  text: 112 "\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A\x7B\x7C\x7D\x7E\x7F"
+  text: 128 "\x87\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8A\x8B\x8C\x8D\x84\x86"
+  text: 144 "\x82\x91\x91\x93\x94\x95\x96\x97\x98\x94\x81\x9B\x9C\x9B\x9E\x9F"
+  text: 160 "\xA0\xA1\xA2\xA3\xA4\xA4\xA6\xA7\xA8\xA9\xAA\xAB\xAC\xAD\xAE\xAF"
+  text: 176 "\xB0\xB1\xB2\xB3\xB4\xA0\x83\x85\xB8\xB9\xBA\xBB\xBC\xBD\xBE\xBF"
+  text: 192 "\xC0\xC1\xC2\xC3\xC4\xC5\xC6\xC6\xC8\xC9\xCA\xCB\xCC\xCD\xCE\xCF"
+  text: 208 "\xD0\xD0\x88\x89\x8A\xD5\xA1\x8C\x8B\xD9\xDA\xDB\xDC\xDD\x8D\xDF"
+  text: 224 "\xA2\xE1\x93\x95\xE4\xE4\xE6\xE7\xE7\xA3\x96\x97\xEC\xEC\xEE\xEF"
+  text: 240 "\xF0\xF1\xF2\xF3\xF4\xF5\xF6\xF7\xF8\xF9\xFA\xFB\xFC\xFD\xFE\xFF"
+ }
+ table: SORTORDER
+ {
+  text:   0 "\x20\x21\x22\x23\x24\x25\x26\x27\x28\x29\x2A\x2B\x2C\x2D\x2E\x2F"
+  text:  16 "\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x3A\x3B\x3C\x3D\x3E\x3F"
+  text:  32 "\x40\x41\x61\xB5\xA0\xB6\x83\xB7\x85\xC7\xC6\x42\x62\x43\x63\x80"
+  text:  48 "\x87\x44\x64\x45\x65\x90\x82\xD3\x89\xD2\x88\xD4\x8A\x46\x66\x47"
+  text:  64 "\x67\x48\x68\x49\x69\xD6\xA1\xD8\x8B\xD7\x8C\xDE\x8D\x4A\x6A\x4B"
+  text:  80 "\x6B\x4C\x6C\x4D\x6D\x4E\x6E\xA5\xA4\x4F\x6F\xE0\xA2\xE2\x93\xE3"
+  text:  96 "\x95\xE5\xE4\x50\x70\x51\x71\x52\x72\x53\x73\xE1\x54\x74\x55\x75"
+  text: 112 "\xE9\xA3\x9A\x81\xEA\x96\xEB\x97\x56\x76\x57\x77\x58\x78\x59\x79"
+  text: 128 "\xED\xEC\x98\x5A\x7A\x8F\x86\x8E\x84\x92\x91\x99\x94\x9D\x9B\xD1"
+  text: 144 "\xD0\xE8\xE7\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0A\x0B\x0C\x0D"
+  text: 160 "\x0E\x0F\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1A\x1B\x1C\x1D"
+  text: 176 "\x1E\x1F\x5B\x5C\x5D\x5E\x5F\x60\x7B\x7C\x7D\x7E\x7F\x9C\x9E\x9F"
+  text: 192 "\xA6\xA7\xA8\xA9\xAA\xAB\xAC\xAD\xAE\xAF\xB0\xB1\xB2\xB3\xB4\xB8"
+  text: 208 "\xB9\xBA\xBB\xBC\xBD\xBE\xBF\xC0\xC1\xC2\xC3\xC4\xC5\xC8\xC9\xCA"
+  text: 224 "\xCB\xCC\xCD\xCE\xCF\xD5\xD9\xDA\xDB\xDC\xDD\xDF\xE6\xEE\xEF\xF0"
+  text: 240 "\xF1\xF2\xF3\xF4\xF5\xF6\xF7\xF8\xF9\xFA\xFB\xFC\xFD\xFE\xFF\x00"
+ }
+
+  stemtable:
+	/minlen = 3
+	{
+
+	label: L_POSTCLITICS
+	  map: "melo"       ""          "L_GRAPHEMICS" 	6	
+	  map: "mela"       ""          "L_GRAPHEMICS" 	6	
+	  map: "mele"       ""          "L_GRAPHEMICS" 	6	
+	  map: "melos"      ""          "L_GRAPHEMICS" 	7	
+	  map: "melas"      ""          "L_GRAPHEMICS" 	7	
+	  map: "meles"      ""          "L_GRAPHEMICS" 	7	
+	  map: "telo"       ""          "L_GRAPHEMICS" 	6	
+	  map: "tela"       ""          "L_GRAPHEMICS" 	6	
+	  map: "tele"       ""          "L_GRAPHEMICS" 	6	
+	  map: "telos"      ""          "L_GRAPHEMICS" 	7	
+	  map: "telas"      ""          "L_GRAPHEMICS" 	7	
+	  map: "teles"      ""          "L_GRAPHEMICS" 	7	
+	  map: "noslo"      ""          "L_GRAPHEMICS" 	6	
+	  map: "nosla"      ""          "L_GRAPHEMICS" 	6	
+	  map: "nosle"      ""          "L_GRAPHEMICS" 	6	
+	  map: "noslos"     ""          "L_GRAPHEMICS" 	7	
+	  map: "noslas"     ""          "L_GRAPHEMICS" 	7	
+	  map: "nosles"     ""          "L_GRAPHEMICS" 	7	
+	  map: "oslo"       ""          "L_GRAPHEMICS" 	6	
+	  map: "osla"       ""          "L_GRAPHEMICS" 	6	
+	  map: "osle"       ""          "L_GRAPHEMICS" 	6	
+	  map: "oslos"      ""          "L_GRAPHEMICS" 	7	
+	  map: "oslas"      ""          "L_GRAPHEMICS" 	7	
+	  map: "osles"      ""          "L_GRAPHEMICS" 	7	
+	  map: "ame"        "a"         "L_GRAPHEMICS" 	4	
+	  map: "ate"        "a"         "L_GRAPHEMICS" 	4	
+	  map: "anos"       "a"         "L_GRAPHEMICS" 	5	
+	  map: "aos"        "a"         "L_GRAPHEMICS" 	4	
+	  map: "alo"        "a"         "L_GRAPHEMICS" 	4	
+	  map: "ala"        "a"         "L_GRAPHEMICS" 	4	
+	  map: "ale"        "a"         "L_GRAPHEMICS" 	4	
+	  map: "alos"       "a"         "L_GRAPHEMICS" 	5	
+	  map: "alas"       "a"         "L_GRAPHEMICS" 	5	
+	  map: "ales"       "a"         "L_GRAPHEMICS" 	5	
+	  map: "ase"        "a"         "L_GRAPHEMICS" 	5	
+	  map: "eme"        "e"         "L_GRAPHEMICS" 	4	
+	  map: "ete"        "e"         "L_GRAPHEMICS" 	4	
+	  map: "cienos"     "cienos"    "L_GRAPHEMICS"  7
+	  map: "cienos"     "zienos"    "L_GRAPHEMICS"  6
+	  map: "enos"       "e"         "L_GRAPHEMICS" 	5	
+	  map: "eos"        "e"         "L_GRAPHEMICS" 	4	
+	  map: "elo"        "e"         "L_GRAPHEMICS" 	4	
+	  map: "ela"        "e"         "L_GRAPHEMICS" 	4	
+	  map: "ele"        "e"         "L_GRAPHEMICS" 	4	
+	  map: "elos"       "e"         "L_GRAPHEMICS" 	5	
+	  map: "elas"       "e"         "L_GRAPHEMICS" 	5	
+	  map: "eles"       "e"         "L_GRAPHEMICS" 	5	
+	  map: "ese"        "e"         "L_GRAPHEMICS" 	4	
+	  map: "enme"       "en"        "L_GRAPHEMICS" 	5	
+	  map: "ente"       "en"        "L_GRAPHEMICS" 	5	
+	  map: "ennos"      "en"        "L_GRAPHEMICS" 	7	
+	  map: "enlo"       "en"        "L_GRAPHEMICS" 	5	
+	  map: "enla"       "en"        "L_GRAPHEMICS" 	5	
+	  map: "enle"       "en"        "L_GRAPHEMICS" 	5	
+	  map: "enlos"      "en"        "L_GRAPHEMICS" 	7	
+	  map: "enlas"      "en"        "L_GRAPHEMICS" 	7	
+	  map: "enles"      "en"        "L_GRAPHEMICS" 	7	
+	  map: "ense"       "en"        "L_GRAPHEMICS" 	5	
+	  map: "anme"       "an"        "L_GRAPHEMICS" 	6	
+	  map: "ante"       "an"        "L_GRAPHEMICS" 	6	
+	  map: "annos"      "an"        "L_GRAPHEMICS" 	7	
+	  map: "anlo"       "an"        "L_GRAPHEMICS" 	6	
+	  map: "anla"       "an"        "L_GRAPHEMICS" 	6	
+	  map: "anle"       "an"        "L_GRAPHEMICS" 	6	
+	  map: "anlos"      "an"        "L_GRAPHEMICS" 	7	
+	  map: "anlas"      "an"        "L_GRAPHEMICS" 	7	
+	  map: "anles"      "an"        "L_GRAPHEMICS" 	7	
+	  map: "anse"       "an"        "L_GRAPHEMICS" 	6	
+	  map: "arme"       "ar"        "L_GRAPHEMICS" 	5	
+	  map: "arte"       "ar"        "L_GRAPHEMICS" 	5	
+	  map: "arnos"      "ar"        "L_GRAPHEMICS" 	6	
+	  map: "aros"       "ar"        "L_GRAPHEMICS" 	5	
+	  map: "arlo"       "ar"        "L_GRAPHEMICS" 	5	
+	  map: "arla"       "ar"        "L_GRAPHEMICS" 	5	
+	  map: "arle"       "ar"        "L_GRAPHEMICS" 	5	
+	  map: "arlos"      "ar"        "L_GRAPHEMICS" 	6	
+	  map: "arlas"      "ar"        "L_GRAPHEMICS" 	6	
+	  map: "arles"      "ar"        "L_GRAPHEMICS" 	6	
+	  map: "arse"       "ar"        "L_GRAPHEMICS" 	5	
+	  map: "erme"       "er"        "L_GRAPHEMICS" 	5	
+	  map: "erte"       "er"        "L_GRAPHEMICS" 	5	
+	  map: "ernos"      "er"        "L_GRAPHEMICS" 	6	
+	  map: "eros"       "er"        "L_GRAPHEMICS" 	5	
+	  map: "erlo"       "er"        "L_GRAPHEMICS" 	5	
+	  map: "erla"       "er"        "L_GRAPHEMICS" 	5	
+	  map: "erle"       "er"        "L_GRAPHEMICS" 	5	
+	  map: "erlos"      "er"        "L_GRAPHEMICS" 	6	
+	  map: "erlas"      "er"        "L_GRAPHEMICS" 	6	
+	  map: "erles"      "er"        "L_GRAPHEMICS" 	6	
+	  map: "erse"       "er"        "L_GRAPHEMICS" 	5	
+	  map: "irme"       "ir"        "L_GRAPHEMICS" 	4	
+	  map: "irte"       "ir"        "L_GRAPHEMICS" 	4	
+	  map: "irnos"      "ir"        "L_GRAPHEMICS" 	5	
+	  map: "iros"       "ir"        "L_GRAPHEMICS" 	4	
+	  map: "irlo"       "ir"        "L_GRAPHEMICS" 	4	
+	  map: "irla"       "ir"        "L_GRAPHEMICS" 	4	
+	  map: "irle"       "ir"        "L_GRAPHEMICS" 	4	
+	  map: "irlos"      "ir"        "L_GRAPHEMICS" 	5	
+	  map: "irlas"      "ir"        "L_GRAPHEMICS" 	5	
+	  map: "irles"      "ir"        "L_GRAPHEMICS" 	5	
+	  map: "irse"       "ir"        "L_GRAPHEMICS" 	4	
+	  map: "†ndome"     "ando"      "L_GRAPHEMICS" 	7	
+	  map: "†ndote"     "ando"      "L_GRAPHEMICS" 	7	
+	  map: "†ndonos"    "ando"      "L_GRAPHEMICS" 	8	
+	  map: "†ndoos"     "ando"      "L_GRAPHEMICS" 	7	
+	  map: "†ndolo"     "ando"      "L_GRAPHEMICS" 	7	
+	  map: "†ndola"     "ando"      "L_GRAPHEMICS" 	7	
+	  map: "†ndole"     "ando"      "L_GRAPHEMICS" 	7	
+	  map: "†ndolos"    "ando"      "L_GRAPHEMICS" 	8	
+	  map: "†ndolas"    "ando"      "L_GRAPHEMICS" 	8	
+	  map: "†ndoles"    "ando"      "L_GRAPHEMICS" 	8	
+	  map: "†ndose"     "ando"      "L_GRAPHEMICS" 	7	
+	  map: "Çndome"     "endo"      "L_GRAPHEMICS" 	7	
+	  map: "Çndote"     "endo"      "L_GRAPHEMICS" 	7	
+	  map: "Çndonos"    "endo"      "L_GRAPHEMICS" 	8	
+	  map: "Çndoos"     "endo"      "L_GRAPHEMICS" 	7	
+	  map: "Çndolo"     "endo"      "L_GRAPHEMICS" 	7	
+	  map: "Çndola"     "endo"      "L_GRAPHEMICS" 	7	
+	  map: "Çndole"     "endo"      "L_GRAPHEMICS" 	7	
+	  map: "Çndolos"    "endo"      "L_GRAPHEMICS" 	8	
+	  map: "Çndolas"    "endo"      "L_GRAPHEMICS" 	8	
+	  map: "Çndoles"    "endo"      "L_GRAPHEMICS" 	8	
+	  map: "Çndose"     "endo"      "L_GRAPHEMICS" 	7	
+	  map: "andito"     "ando"      "L_GRAPHEMICS" 	8	
+
+	label: L_GRAPHEMICS
+	  map: "ce"         "ze"	"L_INFLECTIONS"        2	
+	       /position = 0
+	  map: "cÇ"         "zÇ"        "L_INFLECTIONS"	 2	
+	       /position = 0
+	  map: "ci"         "zi"        "L_INFLECTIONS"	 2	
+	       /position = 0
+	  map: "c°"         "z°"        "L_INFLECTIONS"	 2	
+	       /position = 0
+	  map: "qu"         "c"         "L_INFLECTIONS"	 2	
+	       /position = 0
+	  map: "ge"         "je"        "L_INFLECTIONS"	 2	
+	       /position = 0
+	  map: "gÇ"         "jÇ"        "L_INFLECTIONS"	 2	
+	       /position = 0
+	  map: "gi"         "ji"        "L_INFLECTIONS"	 2	
+	       /position = 0
+	  map: "g°"         "j°"        "L_INFLECTIONS"	 2	
+	       /position = 0
+	  map: "gue"        "ge"        "L_INFLECTIONS"	 3	
+	       /position = 0
+	  map: "guÇ"        "gÇ"        "L_INFLECTIONS"	 3	
+	       /position = 0
+	  map: "gui"        "gi"        "L_INFLECTIONS"	 3	
+	       /position = 0
+	  map: "gu°"        "g°"        "L_INFLECTIONS"	 3	
+	       /position = 0
+	  map: "gÅe"        "gue"       "L_INFLECTIONS"	 3	
+	       /position = 0
+	  map: "gÅÇ"        "guÇ"       "L_INFLECTIONS"	 3	
+	       /position = 0
+	  map: "gÅi"        "gui"       "L_INFLECTIONS"	 3	
+	       /position = 0
+	  map: "gÅ°"        "gu°"       "L_INFLECTIONS"	 3	
+	       /position = 0
+
+	label: L_INFLECTIONS
+	  map: "adamente"   ""          "L_DERIVATIONS" 	10	
+	  map: "adamen"     ""          "L_DERIVATIONS" 	8	
+	  map: "idamente"   ""          "L_DERIVATIONS" 	10	
+	  map: "idamen"     ""          "L_DERIVATIONS" 	8	
+	  map: "amente"     ""          "L_DERIVATIONS" 	8	
+	  map: "amen"       ""          "L_DERIVATIONS" 	6	
+	  map: "emente"     ""          "L_DERIVATIONS" 	8	
+	  map: "emen"       ""          "L_DERIVATIONS" 	6	
+	  map: "mente"      ""          "L_DERIVATIONS" 	8	
+	  map: "men"        ""          "L_DERIVATIONS" 	6	
+	  map: "antes"      ""          "L_DERIVATIONS" 	7	
+	  map: "ientes"     ""          "L_DERIVATIONS" 	8	
+	  map: "ien"        ""          "L_DERIVATIONS" 	5	
+	  map: "yentes"     ""          "L_DERIVATIONS" 	7	
+	  map: "eszentes"   ""          "L_DONE"  	10	
+	  map: "iszentes"   ""          "L_DONE"  	10	
+	  map: "entes"      ""          "L_DERIVATIONS" 	7	
+	  map: "ando"       ""          "L_DERIVATIONS" 	6	
+	  map: "iendo"      ""          "L_DERIVATIONS" 	6	
+	  map: "yendo"      ""          "L_DONE"  	6	
+	  map: "†ndo"       ""          "L_DERIVATIONS" 	6	
+	  map: "iÇndo"      ""          "L_DERIVATIONS" 	6	
+	  map: "yÇndo"      ""          "L_ADJUSTMENT" 	6	
+	  map: "ar"         ""          "L_DERIVATIONS" 	4	
+	  map: "er"         ""          "L_DERIVATIONS" 	4	
+	  map: "ir"         ""          "L_DONE"  	4	
+	  map: "°r"         ""          "L_ADJUSTMENT" 	3	
+	  map: "†r"         ""          "L_DERIVATIONS" 	4	
+	  map: "Çr"         ""          "L_DERIVATIONS" 	4	
+	  map: "ado"        ""          "L_DERIVATIONS" 	5	
+	  map: "ada"        ""          "L_DERIVATIONS" 	5	
+	  map: "ados"       ""          "L_DERIVATIONS" 	6	
+	  map: "adas"       ""          "L_DERIVATIONS" 	6	
+	  map: "ido"        ""          "L_DERIVATIONS" 	5	
+	  map: "ida"        ""          "L_DERIVATIONS" 	5	
+	  map: "idos"       ""          "L_DERIVATIONS" 	6	
+	  map: "idas"       ""          "L_DERIVATIONS" 	6	
+	  map: "°do"        ""          "L_DERIVATIONS" 	4	
+	  map: "°da"        ""          "L_DERIVATIONS" 	4	
+	  map: "°dos"       ""          "L_DERIVATIONS" 	5	
+	  map: "°das"       ""          "L_DERIVATIONS" 	5	
+	  map: "are"        ""          "L_DERIVATIONS" 	5	
+	  map: "ares"       ""          "L_DERIVATIONS" 	6	
+	  map: "†remos"     ""          "L_DERIVATIONS" 	8	
+	  map: "areis"      ""          "L_DERIVATIONS" 	7	
+	  map: "aren"       ""          "L_DERIVATIONS" 	6	
+	  map: "iere"       ""          "L_DERIVATIONS" 	5	
+	  map: "ieres"      ""          "L_DERIVATIONS" 	6	
+	  map: "iÇremos"    ""          "L_DERIVATIONS" 	8	
+	  map: "iereis"     ""          "L_DERIVATIONS" 	7	
+	  map: "ieren"      ""          "L_DERIVATIONS" 	6	
+	  map: "yere"       ""          "L_DONE"  	5	
+	  map: "yeres"      ""          "L_DONE"  	6	
+	  map: "yÇremos"    ""          "L_DONE"  	8	
+	  map: "yereis"     ""          "L_DONE"  	7	
+	  map: "yeren"      ""          "L_DONE"  	6	
+	  map: "ere"        ""          "L_DERIVATIONS" 	5	
+	  map: "eres"       ""          "L_DERIVATIONS" 	6	
+	  map: "Çremos"     ""          "L_DERIVATIONS" 	8	
+	  map: "ereis"      ""          "L_DERIVATIONS" 	7	
+	  map: "eren"       ""          "L_DERIVATIONS" 	6	
+	  map: "ara"        ""          "L_DERIVATIONS" 	5	
+	  map: "aras"       ""          "L_DERIVATIONS" 	6	
+	  map: "†ramos"     ""          "L_DERIVATIONS" 	8	
+	  map: "arais"      ""          "L_DERIVATIONS" 	7	
+	  map: "aran"       ""          "L_DERIVATIONS" 	6	
+	  map: "iera"       ""          "L_DERIVATIONS" 	5	
+	  map: "ieras"      ""          "L_DERIVATIONS" 	6	
+	  map: "iÇramos"    ""          "L_DERIVATIONS" 	8	
+	  map: "ierais"     ""          "L_DERIVATIONS" 	7	
+	  map: "ieran"      ""          "L_DERIVATIONS" 	6	
+	  map: "yera"       ""          "L_DONE"  	5	
+	  map: "yeras"      ""          "L_DONE"  	6	
+	  map: "yÇramos"    ""          "L_DONE"  	8	
+	  map: "yerais"     ""          "L_DONE"  	7	
+	  map: "yeran"      ""          "L_DONE"  	6	
+	  map: "era"        ""          "L_DERIVATIONS" 	5	
+	  map: "eras"       ""          "L_DERIVATIONS" 	6	
+	  map: "Çramos"     ""          "L_DERIVATIONS" 	8	
+	  map: "erais"      ""          "L_DERIVATIONS" 	7	
+	  map: "eran"       ""          "L_DERIVATIONS" 	6	
+	  map: "ases"       ""          "L_DERIVATIONS" 	6	
+	  map: "†semos"     ""          "L_DERIVATIONS" 	8	
+	  map: "aseis"      ""          "L_DERIVATIONS" 	7	
+	  map: "asen"       ""          "L_DERIVATIONS" 	6	
+	  map: "pie"        "pi"        "L_DONE"  	3	
+	  map: "ie"         ""          "L_DERIVATIONS" 	3	
+	  map: "ieses"      ""          "L_DERIVATIONS" 	6	
+	  map: "iÇsemos"    ""          "L_DERIVATIONS" 	8	
+	  map: "ieseis"     ""          "L_DERIVATIONS" 	7	
+	  map: "iesen"      ""          "L_DERIVATIONS" 	6	
+	  map: "ye"         ""          "L_DONE"  	3	
+	  map: "yeses"      ""          "L_DONE"  	6	
+	  map: "yÇsemos"    ""          "L_DONE"  	8	
+	  map: "yeseis"     ""          "L_DONE"  	7	
+	  map: "yesen"      ""          "L_DONE"  	6	
+	  map: "eses"       ""          "L_DERIVATIONS" 	6	
+	  map: "Çsemos"     ""          "L_DERIVATIONS" 	8	
+	  map: "eseis"      ""          "L_DERIVATIONS" 	7	
+	  map: "esen"       ""          "L_DERIVATIONS" 	6	
+	  map: "har°a"      "haz"       "L_DONE"  	5	
+	  map: "har°as"     "haz"       "L_DONE"  	6	
+	  map: "har°amos"   "haz"       "L_DONE"  	8	
+	  map: "har°ais"    "haz"       "L_DONE"  	7	
+	  map: "har°an"     "haz"       "L_DONE"  	6	
+	  map: "ar°a"       ""          "L_DERIVATIONS" 	6	
+	  map: "ar°as"      ""          "L_DERIVATIONS" 	7	
+	  map: "ar°amos"    ""          "L_DERIVATIONS" 	9	
+	  map: "ar°ais"     ""          "L_DERIVATIONS" 	8	
+	  map: "ar°an"      ""          "L_DERIVATIONS" 	7	
+	  map: "er°a"       ""          "L_DERIVATIONS" 	6	
+	  map: "er°as"      ""          "L_DERIVATIONS" 	7	
+	  map: "er°amos"    ""          "L_DERIVATIONS" 	9	
+	  map: "er°ais"     ""          "L_DERIVATIONS" 	8	
+	  map: "er°an"      ""          "L_DERIVATIONS" 	7	
+	  map: "dir°a"      "dez"       "L_DONE"  	5	
+	  map: "dir°as"     "dez"       "L_DONE"  	6	
+	  map: "dir°amos"   "dez"       "L_DONE"  	8	
+	  map: "dir°ais"    "dez"       "L_DONE"  	7	
+	  map: "dir°an"     "dez"       "L_DONE"  	6	
+	  map: "ir°a"       ""          "L_DERIVATIONS" 	5	
+	  map: "ir°as"      ""          "L_DERIVATIONS" 	6	
+	  map: "ir°amos"    ""          "L_DERIVATIONS" 	8	
+	  map: "ir°ais"     ""          "L_DERIVATIONS" 	7	
+	  map: "ir°an"      ""          "L_DERIVATIONS" 	6	
+	  map: "ndr°a"      "n"         "L_DONE"  	7	
+	  map: "ndr°as"     "n"         "L_DONE"  	8	
+	  map: "ndr°amos"   "n"         "L_DONE"  	10	
+	  map: "ndr°ais"    "n"         "L_DONE"  	9	
+	  map: "ndr°an"     "n"         "L_DONE"  	8	
+	  map: "ldr°a"      "l"         "L_DONE"  	7	
+	  map: "ldr°as"     "l"         "L_DONE"  	8	
+	  map: "ldr°amos"   "l"         "L_DONE"  	10	
+	  map: "ldr°ais"    "l"         "L_DONE"  	9	
+	  map: "ldr°an"     "l"         "L_DONE"  	8	
+	  map: "dr°a"       "d"         "L_DONE"  	6	
+	  map: "dr°as"      "d"         "L_DONE"  	7	
+	  map: "dr°amos"    "d"         "L_DONE"  	9	
+	  map: "dr°ais"     "d"         "L_DONE"  	8	
+	  map: "dr°an"      "d"         "L_DONE"  	7	
+	  map: "abr°a"      "ab"        "L_DONE"  	6	
+	  map: "abr°as"     "ab"        "L_DONE"  	7	
+	  map: "abr°amos"   "ab"        "L_DONE"  	9	
+	  map: "abr°ais"    "ab"        "L_DONE"  	8	
+	  map: "abr°an"     "ab"        "L_DONE"  	7	
+	  map: "err°a"      "er"        "L_DONE"  	7	
+	  map: "err°as"     "er"        "L_DONE"  	8	
+	  map: "err°amos"   "er"        "L_DONE"  	10	
+	  map: "err°ais"    "er"        "L_DONE"  	9	
+	  map: "err°an"     "er"        "L_DONE"  	8	
+	  map: "harÇ"       "haz"       "L_DONE"  	4	
+	  map: "har†s"      "haz"       "L_DONE"  	5	
+	  map: "har†"       "haz"       "L_DONE"  	4	
+	  map: "haremos"    "haz"       "L_DONE"  	7	
+	  map: "harÇis"     "haz"       "L_DONE"  	6	
+	  map: "har†n"      "haz"       "L_DONE"  	5	
+	  map: "arÇ"        ""          "L_DERIVATIONS" 	5	
+	  map: "ar†s"       ""          "L_DERIVATIONS" 	6	
+	  map: "ar†"        ""          "L_DERIVATIONS" 	5	
+	  map: "aremos"     ""          "L_DERIVATIONS" 	8	
+	  map: "arÇis"      ""          "L_DERIVATIONS" 	7	
+	  map: "ar†n"       ""          "L_DERIVATIONS" 	6	
+	  map: "erÇ"        ""          "L_DERIVATIONS" 	4	
+	  map: "er†s"       ""          "L_DERIVATIONS" 	5	
+	  map: "er†"        ""          "L_DERIVATIONS" 	4	
+	  map: "eremos"     ""          "L_DERIVATIONS" 	7	
+	  map: "erÇis"      ""          "L_DERIVATIONS" 	6	
+	  map: "er†n"       ""          "L_DERIVATIONS" 	5	
+	  map: "dirÇ"       "dez"       "L_DONE"  	4	
+	  map: "dir†s"      "dez"       "L_DONE"  	5	
+	  map: "dir†"       "dez"       "L_DONE"  	4	
+	  map: "diremos"    "dez"       "L_DONE"  	7	
+	  map: "dirÇis"     "dez"       "L_DONE"  	6	
+	  map: "dir†n"      "dez"       "L_DONE"  	5	
+	  map: "irÇ"        ""          "L_DERIVATIONS" 	4	
+	  map: "ir†s"       ""          "L_DERIVATIONS" 	5	
+	  map: "ir†"        ""          "L_DERIVATIONS" 	4	
+	  map: "iremos"     ""          "L_DERIVATIONS" 	7	
+	  map: "irÇis"      ""          "L_DERIVATIONS" 	6	
+	  map: "ir†n"       ""          "L_DERIVATIONS" 	5	
+	  map: "ndrÇ"       "n"         "L_DONE"  	6	
+	  map: "ndr†s"      "n"         "L_DONE"  	7	
+	  map: "ndr†"       "n"         "L_DONE"  	6	
+	  map: "ndremos"    "n"         "L_DONE"  	9	
+	  map: "ndrÇis"     "n"         "L_DONE"  	8	
+	  map: "ndr†n"      "n"         "L_DONE"  	7	
+	  map: "ldrÇ"       "l"         "L_DONE"  	6	
+	  map: "ldr†s"      "l"         "L_DONE"  	7	
+	  map: "ldr†"       "l"         "L_DONE"  	6	
+	  map: "ldremos"    "l"         "L_DONE"  	9	
+	  map: "ldrÇis"     "l"         "L_DONE"  	8	
+	  map: "ldr†n"      "l"         "L_DONE"  	7	
+	  map: "drÇ"        "d"         "L_DONE"  	5	
+	  map: "dr†s"       "d"         "L_DONE"  	6	
+	  map: "dr†"        "d"         "L_DONE"  	5	
+	  map: "dremos"     "d"         "L_DONE"  	8	
+	  map: "drÇis"      "d"         "L_DONE"  	7	
+	  map: "dr†n"       "d"         "L_DONE"  	6	
+	  map: "abrÇ"       "ab"        "L_DONE"  	5	
+	  map: "abr†s"      "ab"        "L_DONE"  	6	
+	  map: "abr†"       "ab"        "L_DONE"  	5	
+	  map: "abremos"    "ab"        "L_DONE"  	8	
+	  map: "abrÇis"     "ab"        "L_DONE"  	7	
+	  map: "abr†n"      "ab"        "L_DONE"  	6	
+	  map: "errÇ"       "er"        "L_DONE"  	6	
+	  map: "err†s"      "er"        "L_DONE"  	7	
+	  map: "err†"       "er"        "L_DONE"  	6	
+	  map: "erremos"    "er"        "L_DONE"  	9	
+	  map: "errÇis"     "er"        "L_DONE"  	8	
+	  map: "err†n"      "er"        "L_DONE"  	7	
+	  map: "aba"        ""          "L_DERIVATIONS" 	5	
+	  map: "abas"       ""          "L_DERIVATIONS" 	6	
+	  map: "†bamos"     ""          "L_DERIVATIONS" 	8	
+	  map: "abais"      ""          "L_DERIVATIONS" 	7	
+	  map: "aban"       ""          "L_DERIVATIONS" 	6	
+	  map: "°a"         ""          "L_DERIVATIONS" 	3	
+	  map: "°as"        ""          "L_DERIVATIONS" 	4	
+	  map: "°amos"      ""          "L_DERIVATIONS" 	6	
+	  map: "°ais"       ""          "L_DERIVATIONS" 	5	
+	  map: "°an"        ""          "L_DERIVATIONS" 	4	
+	  map: "Ç"          ""          "L_DERIVATIONS" 	3	
+	  map: "aste"       ""          "L_DERIVATIONS" 	6	
+	  map: "zcamos"     "z"         "L_DERIVATIONS" 	8	
+	  map: "amos"       ""          "L_DERIVATIONS" 	6	
+	  map: "yamos"      ""          "L_DERIVATIONS" 	7	
+	  map: "asteis"     ""          "L_DERIVATIONS" 	8	
+	  map: "aron"       ""          "L_DERIVATIONS" 	6	
+	  map: "°"          ""          "L_DERIVATIONS" 	3	
+	  map: "iste"       ""          "L_DERIVATIONS" 	6	
+	  map: "°ste"       ""          "L_DERIVATIONS" 	6	
+	  map: "i¢"         ""          "L_DERIVATIONS" 	3	
+	  map: "y¢"         ""          "L_DERIVATIONS" 	3	
+	  map: "¢"          ""          "L_DERIVATIONS" 	3	
+	  map: "o"          ""          "L_DERIVATIONS" 	4	
+	  map: "imos"       ""          "L_DERIVATIONS" 	6	
+	  map: "°mos"       ""          "L_DERIVATIONS" 	5	
+	  map: "isteis"     ""          "L_DERIVATIONS" 	7	
+	  map: "°steis"     ""          "L_DERIVATIONS" 	7	
+	  map: "ieron"      ""          "L_DERIVATIONS" 	6	
+	  map: "yeron"      ""          "L_DERIVATIONS" 	6	
+	  map: "eron"       ""          "L_DERIVATIONS" 	7	
+	  map: "emos"       ""          "L_DERIVATIONS" 	5	
+	  map: "zc†is"      "z"         "L_DERIVATIONS" 	7	
+	  map: "†is"        ""          "L_DERIVATIONS" 	5	
+	  map: "y†is"       ""          "L_DERIVATIONS" 	6	
+	  map: "Çis"        ""          "L_DERIVATIONS" 	5	
+	  map: "°s"         ""          "L_DERIVATIONS" 	3	
+	  map: "uis"        "u"         "L_DERIVATIONS" 	4	
+	  map: "dad"        "dad"       "L_DERIVATIONS" 	6	
+	  map: "tad"        "tad"       "L_DERIVATIONS" 	6	
+	  map: "ad"         ""          "L_DERIVATIONS" 	4	
+	  map: "erid"       ""          "L_DONE"  	7	
+	  map: "id"         ""          "L_DERIVATIONS" 	4	
+	  map: "°d"         ""          "L_DERIVATIONS" 	3	
+	  map: "ed"         ""          "L_DERIVATIONS" 	4	
+	  map: "zcan"       "z"         "L_DERIVATIONS" 	6	
+	  map: "an"         ""          "L_DERIVATIONS" 	4	
+	  map: "†n"         ""          "L_DERIVATIONS" 	5	
+	  map: "yan"        ""          "L_DERIVATIONS" 	4	
+	  map: "eszen"      ""          "L_DONE"  	7	
+	  map: "iszen"      ""          "L_DONE"  	7	
+	  map: "en"         ""          "L_DERIVATIONS" 	4	
+	  map: "Çn"         ""          "L_DERIVATIONS" 	5	
+	  map: "yen"        ""          "L_DONE"  	4	
+	  map: "e"          ""          "L_DERIVATIONS" 	3	
+	  map: "es"         ""          "L_DERIVATIONS" 	4	
+	  map: "ye"         ""          "L_DERIVATIONS" 	3	
+	  map: "yes"        ""          "L_DERIVATIONS" 	4	
+	  map: "Ç"          ""          "L_DERIVATIONS" 	4	
+	  map: "Çs"         ""          "L_DERIVATIONS" 	5	
+	  map: "zco"        "z"         "L_DERIVATIONS" 	5	
+	  map: "o"          ""          "L_DERIVATIONS" 	3	
+	  map: "os"         ""          "L_DERIVATIONS" 	4	
+	  map: "oy"         ""          "L_DERIVATIONS" 	4	
+	  map: "yo"         ""          "L_DERIVATIONS" 	4	
+	  map: "zca"        "z"         "L_DERIVATIONS" 	5	
+	  map: "zcas"       "z"         "L_DERIVATIONS" 	6	
+	  map: "a"          ""          "L_DERIVATIONS" 	3	
+	  map: "as"         ""          "L_DERIVATIONS" 	4	
+	  map: "†"          ""          "L_DERIVATIONS" 	4	
+	  map: "†s"         ""          "L_DERIVATIONS" 	5	
+	  map: "ya"         ""          "L_DERIVATIONS" 	4	
+	  map: "yas"        ""          "L_DERIVATIONS" 	5	
+
+	label: L_DERIVATIONS
+	  map: "abil°sim"   ""          "L_DONE"  	10	
+	  map: "ubil°sim"   ""          "L_DONE"  	10	
+	  map: "ibil°sim"   ""          "L_DONE"  	10	
+	  map: "os°sim"     ""          "L_DONE"  	9	
+	  map: "°sim"       ""          "L_DONE"  	6	
+	  map: "imbr"       ""          "L_DONE"  	7	
+	  map: "edumbr"     ""          "L_DONE"  	9	
+	  map: "idumbr"     ""          "L_DONE"  	9	
+	  map: "umbr"       ""          "L_DONE"  	7	
+	  map: "ambr"       ""          "L_DONE"  	7	
+	  map: "†men"       ""          "L_DONE"  	7	
+	  map: "umen"       ""          "L_DONE"  	7	
+	  map: "£men"       ""          "L_DONE"  	7	
+	  map: "imen"       ""          "L_DONE"  	7	
+	  map: "°men"       ""          "L_DONE"  	7	
+	  map: "itud"       ""          "L_DONE"  	7	
+	  map: "etud"       ""          "L_DONE"  	7	
+	  map: "elaj"       ""          "L_DONE"  	7	
+	  map: "aj"         ""          "L_DONE"  	5	
+	  map: "†j"         ""          "L_DONE"  	5	
+	  map: "ij"         ""          "L_DONE"  	6	
+	  map: "Çn"         ""          "L_DONE"  	5	
+	  map: "en"         ""          "L_DONE"  	5	
+	  map: "oni"        ""          "L_DONE"  	6	
+	  map: "istad"      ""          "L_DONE"  	7	
+	  map: "abilidad"   ""          "L_DONE"  	10	
+	  map: "ubilidad"   ""          "L_DONE"  	10	
+	  map: "ibilidad"   ""          "L_DONE"  	10	
+	  map: "erosidad"   ""          "L_DONE"  	11	
+	  map: "olosidad"   ""          "L_DONE"  	11	
+	  map: "ulosidad"   ""          "L_DONE"  	11	
+	  map: "osidad"     ""          "L_DONE"  	9	
+	  map: "ividad"     ""          "L_NORMALIZE" 	9	
+	  map: "azidad"     ""          "L_DONE"  	9	
+	  map: "idad"       ""          "L_DONE"  	7	
+	  map: "edad"       ""          "L_DONE"  	7	
+	  map: "dad"        ""          "L_DONE"  	6	
+	  map: "tad"        ""          "L_DONE"  	6	
+	  map: "ificazi¢n"  ""          "L_DONE"  	11	
+	  map: "icazi¢n"    ""          "L_DONE"  	10	
+	  map: "alizazi¢n"  ""          "L_DONE"  	12	
+	  map: "ilizazi¢n"  ""          "L_DONE"  	12	
+	  map: "anizazi¢n"  ""          "L_DONE"  	12	
+	  map: "enizazi¢n"  ""          "L_DONE"  	12	
+	  map: "inizazi¢n"  ""          "L_DONE"  	12	
+	  map: "onizazi¢n"  ""          "L_DONE"  	12	
+	  map: "orizazi¢n"  ""          "L_DONE"  	12	
+	  map: "arizazi¢n"  ""          "L_DONE"  	12	
+	  map: "izazi¢n"    ""          "L_DONE"  	10	
+	  map: "ulazi¢n"    ""          "L_DONE"  	10	
+	  map: "erazi¢n"    ""          "L_DONE"  	9	
+	  map: "azi¢n"      ""          "L_DONE"  	8	
+	  map: "izi¢n"      ""          "L_DONE"  	8	
+	  map: "czi¢n"      "ct"        "L_NORMALIZE" 	6	
+	  map: "zi¢n"       "z"         "L_NORMALIZE" 	8	
+	  map: "zi¢n"       "zion"      "L_DONE"  	5	
+	  map: "nsi¢n"      "ns"        "L_DONE"  	9	
+	  map: "nsi¢n"      "nsion"     "L_DONE"  	5	
+	  map: "si¢n"       ""          "L_DONE"  	8	
+	  map: "si¢n"       "sion"      "L_DONE"  	4	
+	  map: "i¢n"        ""          "L_NORMALIZE" 	7	
+	  map: "az¢n"       ""          "L_DONE"  	7	
+	  map: "iz¢n"       ""          "L_DONE"  	7	
+	  map: "z¢n"        "z"         "L_DONE"  	7	
+	  map: "z¢n"        "zon"       "L_DONE"  	4	
+	  map: "ificazion"  ""          "L_DONE"  	11	
+	  map: "icazion"    ""          "L_DONE"  	10	
+	  map: "alizazion"  ""          "L_DONE"  	12	
+	  map: "ilizazion"  ""          "L_DONE"  	12	
+	  map: "anizazion"  ""          "L_DONE"  	12	
+	  map: "enizazion"  ""          "L_DONE"  	12	
+	  map: "inizazion"  ""          "L_DONE"  	12	
+	  map: "onizazion"  ""          "L_DONE"  	12	
+	  map: "orizazion"  ""          "L_DONE"  	12	
+	  map: "arizazion"  ""          "L_DONE"  	12	
+	  map: "izazion"    ""          "L_DONE"  	10	
+	  map: "ulazion"    ""          "L_DONE"  	10	
+	  map: "erazion"    ""          "L_DONE"  	9	
+	  map: "azion"      ""          "L_DONE"  	8	
+	  map: "izion"      ""          "L_DONE"  	8	
+	  map: "czion"      "ct"        "L_NORMALIZE" 	6	
+	  map: "zion"       "z"         "L_NORMALIZE" 	8	
+	  map: "zion"       "zion"      "L_DONE"  	5	
+	  map: "nsion"      "ns"        "L_DONE"  	9	
+	  map: "nsion"      "nsion"     "L_DONE"  	5	
+	  map: "sion"       "s"         "L_DONE"  	8	
+	  map: "sion"       "sion"      "L_DONE"  	4	
+	  map: "ion"        ""          "L_NORMALIZE" 	7	
+	  map: "azon"       ""          "L_DONE"  	7	
+	  map: "izon"       ""          "L_DONE"  	7	
+	  map: "zon"        "z"         "L_DONE"  	7	
+	  map: "zon"        "zon"       "L_DONE"  	4	
+	  map: "uramient"   ""          "L_DONE"  	11	
+	  map: "eamient"    ""          "L_DONE"  	10	
+	  map: "iamient"    ""          "L_DONE"  	10	
+	  map: "amient"     ""          "L_DONE"  	9	
+	  map: "ezimient"   ""          "L_DONE"  	11	
+	  map: "imient"     ""          "L_DONE"  	9	
+	  map: "ament"      ""          "L_DONE"  	8	
+	  map: "iment"      ""          "L_DONE"  	8	
+	  map: "azg"        ""          "L_DONE"  	6	
+	  map: "inch"       ""          "L_DONE"  	7	
+	  map: "alism"      ""          "L_DONE"  	8	
+	  map: "ilism"      ""          "L_DONE"  	8	
+	  map: "ism"        ""          "L_DONE"  	6	
+	  map: "izi"        ""          "L_DONE"  	6	
+	  map: "°zi"        ""          "L_DONE"  	6	
+	  map: "eszenzi"    ""          "L_DONE"  	9	
+	  map: "iszenzi"    ""          "L_DONE"  	9	
+	  map: "efizenzi"   ""          "L_DONE"  	10	
+	  map: "ifizenzi"   ""          "L_DONE"  	10	
+	  map: "izenzi"     ""          "L_DONE"  	9	
+	  map: "ienzi"      ""          "L_DONE"  	7	
+	  map: "enzi"       ""          "L_DONE"  	6	
+	  map: "enz"        ""          "L_DONE"  	5	
+	  map: "anzi"       ""          "L_DONE"  	6	
+	  map: "anz"        ""          "L_DONE"  	5	
+	  map: "ectori"     ""          "L_DONE"  	9	
+	  map: "ector"      ""          "L_DONE"  	8	
+	  map: "ctori"      "ct"        "L_NORMALIZE" 	7	
+	  map: "ctor"       "ct"        "L_NORMALIZE" 	5	
+	  map: "ificador"   ""          "L_DONE"  	10	
+	  map: "icador"     ""          "L_DONE"  	9	
+	  map: "alizador"   ""          "L_DONE"  	11	
+	  map: "ilizador"   ""          "L_DONE"  	11	
+	  map: "anizador"   ""          "L_DONE"  	11	
+	  map: "inizador"   ""          "L_DONE"  	11	
+	  map: "onizador"   ""          "L_DONE"  	11	
+	  map: "orizador"   ""          "L_DONE"  	11	
+	  map: "arizador"   ""          "L_DONE"  	11	
+	  map: "izador"     ""          "L_DONE"  	9	
+	  map: "ezedor"     ""          "L_DONE"  	9	
+	  map: "ulador"     ""          "L_DONE"  	9	
+	  map: "ajador"     ""          "L_DONE"  	9	
+	  map: "erador"     ""          "L_DONE"  	8	
+	  map: "eador"      ""          "L_DONE"  	8	
+	  map: "iador"      ""          "L_DONE"  	8	
+	  map: "ador"       ""          "L_DONE"  	6	
+	  map: "edor"       ""          "L_DONE"  	6	
+	  map: "idor"       ""          "L_DONE"  	6	
+	  map: "ulatori"    ""          "L_DONE"  	10	
+	  map: "eratori"    ""          "L_DONE"  	9	
+	  map: "atori"      ""          "L_DONE"  	7	
+	  map: "etori"      ""          "L_DONE"  	7	
+	  map: "itori"      ""          "L_DONE"  	7	
+	  map: "ectriz"     ""          "L_DONE"  	9	
+	  map: "ctriz"      "ct"        "L_NORMALIZE" 	6	
+	  map: "eratriz"    ""          "L_DONE"  	7	
+	  map: "atriz"      ""          "L_DONE"  	7	
+	  map: "etriz"      ""          "L_DONE"  	7	
+	  map: "itriz"      ""          "L_DONE"  	7	
+	  map: "ori"        ""          "L_NORMALIZE" 	6	
+	  map: "or°"        ""          "L_DONE"  	6	
+	  map: "ior"        ""          "L_DONE"  	6	
+	  map: "or"         ""          "L_NORMALIZE" 	5	
+	  map: "¢r"         ""          "L_DONE"  	5	
+	  map: "ari"        ""          "L_DONE"  	6	
+	  map: "eri"        ""          "L_DONE"  	6	
+	  map: "adur°"      ""          "L_DONE"  	8	
+	  map: "edur°"      ""          "L_DONE"  	8	
+	  map: "idur°"      ""          "L_DONE"  	8	
+	  map: "adur"       ""          "L_DONE"  	7	
+	  map: "edur"       ""          "L_DONE"  	7	
+	  map: "idur"       ""          "L_DONE"  	7	
+	  map: "ur"         ""          "L_DONE"  	5	
+	  map: "£r"         ""          "L_DONE"  	5	
+	  map: "ar"         ""          "L_DONE"  	5	
+	  map: "abunder°"   ""          "L_DONE"  	8	
+	  map: "ander°"     ""          "L_DONE"  	8	
+	  map: "ader°"      ""          "L_DONE"  	8	
+	  map: "eder°"      ""          "L_DONE"  	8	
+	  map: "ider°"      ""          "L_DONE"  	8	
+	  map: "er°"        ""          "L_DONE"  	6	
+	  map: "icader"     ""          "L_DONE"  	9	
+	  map: "ader"       ""          "L_DONE"  	7	
+	  map: "ezeder"     ""          "L_DONE"  	9	
+	  map: "eder"       ""          "L_DONE"  	7	
+	  map: "ider"       ""          "L_DONE"  	7	
+	  map: "aler"       ""          "L_DONE"  	7	
+	  map: "iler"       ""          "L_DONE"  	7	
+	  map: "aller"      ""          "L_DONE"  	8	
+	  map: "iller"      ""          "L_DONE"  	8	
+	  map: "aner"       ""          "L_DONE"  	7	
+	  map: "iner"       ""          "L_DONE"  	7	
+	  map: "oner"       ""          "L_DONE"  	7	
+	  map: "ier"        ""          "L_DONE"  	6	
+	  map: "ener"       ""          "L_DONE"  	7	
+	  map: "erer"       ""          "L_DONE"  	7	
+	  map: "er"         ""          "L_DONE"  	5	
+	  map: "enat"       ""          "L_DONE"  	7	
+	  map: "at"         ""          "L_DONE"  	5	
+	  map: "iticastr"   ""          "L_DONE"  	11	
+	  map: "icastr"     ""          "L_DONE"  	9	
+	  map: "astr"       ""          "L_DONE"  	8	
+	  map: "ectiv"      ""          "L_DONE"  	8	
+	  map: "ctiv"       "ct"        "L_NORMALIZE" 	5	
+	  map: "ct°v"       "ct"        "L_NORMALIZE" 	5	
+	  map: "izativ"     ""          "L_DONE"  	9	
+	  map: "erativ"     ""          "L_DONE"  	8	
+	  map: "ativ"       ""          "L_DONE"  	6	
+	  map: "etiv"       ""          "L_DONE"  	6	
+	  map: "itiv"       ""          "L_DONE"  	6	
+	  map: "iv"         ""          "L_NORMALIZE" 	5	
+	  map: "av"         ""          "L_DONE"  	5	
+	  map: "alizabl"    ""          "L_DONE"  	10	
+	  map: "anizabl"    ""          "L_DONE"  	10	
+	  map: "onizabl"    ""          "L_DONE"  	10	
+	  map: "izabl"      ""          "L_DONE"  	8	
+	  map: "abl"        ""          "L_DONE"  	5	
+	  map: "ubl"        ""          "L_DONE"  	5	
+	  map: "ibl"        ""          "L_DONE"  	5	
+	  map: "ivist"      ""          "L_NORMALIZE" 	8	
+	  map: "alist"      ""          "L_DONE"  	8	
+	  map: "ist"        ""          "L_DONE"  	6	
+	  map: "†stic"      ""          "L_DONE"  	9	
+	  map: "°stic"      ""          "L_DONE"  	8	
+	  map: "†tic"       ""          "L_DONE"  	7	
+	  map: "°tic"       ""          "L_DONE"  	7	
+	  map: "¢tic"       ""          "L_DONE"  	7	
+	  map: "Çtic"       ""          "L_DONE"  	7	
+	  map: "Çutic"      ""          "L_DONE"  	10	
+	  map: "¢nic"       ""          "L_DONE"  	7	
+	  map: "¢ric"       ""          "L_DONE"  	7	
+	  map: "†nic"       ""          "L_DONE"  	7	
+	  map: "†ric"       ""          "L_DONE"  	7	
+	  map: "Çric"       ""          "L_DONE"  	7	
+	  map: "¢lic"       ""          "L_DONE"  	7	
+	  map: "Çlic"       ""          "L_DONE"  	7	
+	  map: "oic"        ""          "L_DONE"  	6	
+	  map: "ifizi"      ""          "L_DONE"  	7	
+	  map: "ific"       ""          "L_DONE"  	6	
+	  map: "°fic"       ""          "L_DONE"  	6	
+	  map: "if°c"       ""          "L_DONE"  	6	
+	  map: "efizi"      ""          "L_DONE"  	8	
+	  map: "ef°zi"      ""          "L_DONE"  	8	
+	  map: "efic"       ""          "L_DONE"  	7	
+	  map: "Çfic"       ""          "L_DONE"  	7	
+	  map: "adiz"       ""          "L_DONE"  	7	
+	  map: "aliz"       ""          "L_DONE"  	7	
+	  map: "iliz"       ""          "L_DONE"  	7	
+	  map: "oliz"       ""          "L_DONE"  	7	
+	  map: "aniz"       ""          "L_DONE"  	7	
+	  map: "eniz"       ""          "L_DONE"  	7	
+	  map: "iniz"       ""          "L_DONE"  	7	
+	  map: "oniz"       ""          "L_DONE"  	7	
+	  map: "oriz"       ""          "L_DONE"  	7	
+	  map: "ariz"       ""          "L_DONE"  	7	
+	  map: "iz"         ""          "L_DONE"  	5	
+	  map: "ad°z"       ""          "L_DONE"  	7	
+	  map: "al°z"       ""          "L_DONE"  	7	
+	  map: "il°z"       ""          "L_DONE"  	7	
+	  map: "ol°z"       ""          "L_DONE"  	7	
+	  map: "an°z"       ""          "L_DONE"  	7	
+	  map: "in°z"       ""          "L_DONE"  	7	
+	  map: "on°z"       ""          "L_DONE"  	7	
+	  map: "or°z"       ""          "L_DONE"  	7	
+	  map: "ar°z"       ""          "L_DONE"  	7	
+	  map: "°z"         ""          "L_DONE"  	5	
+	  map: "ez"         ""          "L_DONE"  	5	
+	  map: "dados"      ""          "L_DONE"  	8	
+	  map: "idos"       ""          "L_DONE"  	7	
+	  map: "igos"       ""          "L_DONE"  	6	
+	  map: "izios"      ""          "L_DONE"  	8	
+	  map: "oros"       ""          "L_DONE"  	7	
+	  map: "uros"       ""          "L_DONE"  	7	
+	  map: "eros"       ""          "L_DONE"  	7	
+	  map: "olos"       ""          "L_DONE"  	7	
+	  map: "ulos"       ""          "L_DONE"  	7	
+	  map: "os"         ""          "L_DONE"  	5	
+	  map: "erieg"      ""          "L_DONE"  	8	
+	  map: "ieg"        ""          "L_DONE"  	6	
+	  map: "isc"        ""          "L_DONE"  	6	
+	  map: "adesc"      ""          "L_DONE"  	8	
+	  map: "esc"        ""          "L_DONE"  	6	
+	  map: "asc"        ""          "L_DONE"  	6	
+	  map: "usc"        ""          "L_DONE"  	6	
+	  map: "uzc"        ""          "L_DONE"  	6	
+	  map: "enc"        ""          "L_DONE"  	6	
+	  map: "eng"        ""          "L_DONE"  	6	
+	  map: "ens"        ""          "L_DONE"  	8	
+	  map: "ant"        ""          "L_DONE"  	6	
+	  map: "izent"      ""          "L_DONE"  	8	
+	  map: "ent"        ""          "L_DONE"  	6	
+	  map: "e§"         ""          "L_DONE"  	5	
+	  map: "†ne"        ""          "L_DONE"  	6	
+	  map: "°ne"        ""          "L_DONE"  	6	
+	  map: "†ze"        ""          "L_DONE"  	6	
+	  map: "abund"      ""          "L_DONE"  	8	
+	  map: "ebund"      ""          "L_DONE"  	8	
+	  map: "ibund"      ""          "L_DONE"  	8	
+	  map: "und"        ""          "L_DONE"  	6	
+	  map: "adill"      ""          "L_DONE"  	8	
+	  map: "ezezill"    ""          "L_DONE"  	9	
+	  map: "ezill"      ""          "L_DONE"  	7	
+	  map: "orzill"     ""          "L_DONE"  	9	
+	  map: "erzill"     ""          "L_DONE"  	9	
+	  map: "zill"       ""          "L_DONE"  	8	
+	  map: "ill"        ""          "L_DONE"  	6	
+	  map: "ziell"      ""          "L_DONE"  	9	
+	  map: "ezezit"     ""          "L_DONE"  	8	
+	  map: "ezit"       ""          "L_DONE"  	6	
+	  map: "orzit"      ""          "L_DONE"  	8	
+	  map: "erzit"      ""          "L_DONE"  	8	
+	  map: "itit"       ""          "L_DONE"  	8	
+	  map: "zit"        ""          "L_DONE"  	7	
+	  map: "it"         ""          "L_DONE"  	5	
+	  map: "itic"       ""          "L_DONE"  	8	
+	  map: "ezezic"     ""          "L_DONE"  	8	
+	  map: "ezic"       ""          "L_DONE"  	6	
+	  map: "zic"        ""          "L_DONE"  	7	
+	  map: "ic"         ""          "L_DONE"  	5	
+	  map: "ezezu"      ""          "L_DONE"  	7	
+	  map: "ezu"        ""          "L_DONE"  	5	
+	  map: "zu"         ""          "L_DONE"  	6	
+	  map: "achu"       ""          "L_DONE"  	6	
+	  map: "ichu"       ""          "L_DONE"  	6	
+	  map: "u"          ""          "L_DONE"  	4	
+	  map: "zuec"       ""          "L_DONE"  	8	
+	  map: "ach¢n"      ""          "L_DONE"  	8	
+	  map: "ot¢n"       ""          "L_DONE"  	7	
+	  map: "et¢n"       ""          "L_DONE"  	7	
+	  map: "er¢n"       ""          "L_DONE"  	7	
+	  map: "¢n"         ""          "L_DONE"  	5	
+	  map: "achon"      ""          "L_DONE"  	8	
+	  map: "oton"       ""          "L_DONE"  	7	
+	  map: "eton"       ""          "L_DONE"  	7	
+	  map: "eron"       ""          "L_DONE"  	7	
+	  map: "on"         ""          "L_DONE"  	5	
+	  map: "etaz"       ""          "L_DONE"  	7	
+	  map: "onaz"       ""          "L_DONE"  	7	
+	  map: "achaz"      ""          "L_DONE"  	8	
+	  map: "otaz"       ""          "L_DONE"  	7	
+	  map: "icaz"       ""          "L_DONE"  	7	
+	  map: "az"         ""          "L_DONE"  	5	
+	  map: "onach"      ""          "L_DONE"  	8	
+	  map: "azach"      ""          "L_DONE"  	8	
+	  map: "otach"      ""          "L_DONE"  	8	
+	  map: "ach"        ""          "L_DONE"  	6	
+	  map: "onot"       ""          "L_DONE"  	7	
+	  map: "azot"       ""          "L_DONE"  	7	
+	  map: "achot"      ""          "L_DONE"  	8	
+	  map: "otot"       ""          "L_DONE"  	7	
+	  map: "ot"         ""          "L_DONE"  	5	
+	  map: "uch"        ""          "L_DONE"  	6	
+	  map: "arrac"      "ar"        "L_DONE"  	8	
+	  map: "iac"        ""          "L_DONE"  	6	
+	  map: "ac"         ""          "L_DONE"  	5	
+	  map: "arruc"      "ar"        "L_DONE"  	8	
+	  map: "uc"         ""          "L_DONE"  	5	
+	  map: "uz"         ""          "L_DONE"  	5	
+	  map: "ig"         ""          "L_DONE"  	4	
+	  map: "inÇs"       ""          "L_DONE"  	7	
+	  map: "ines"       ""          "L_DONE"  	7	
+	  map: "Çs"         ""          "L_DONE"  	5	
+	  map: "es"         ""          "L_DONE"  	5	
+	  map: "aret"       ""          "L_DONE"  	7	
+	  map: "iet"        ""          "L_DONE"  	6	
+	  map: "et"         ""          "L_DONE"  	5	
+	  map: "arin"       ""          "L_DONE"  	7	
+	  map: "alin"       ""          "L_DONE"  	7	
+	  map: "itin"       ""          "L_DONE"  	7	
+	  map: "in"         ""          "L_DONE"  	5	
+	  map: "ar°n"       ""          "L_DONE"  	7	
+	  map: "it°n"       ""          "L_DONE"  	7	
+	  map: "°n"         ""          "L_DONE"  	5	
+	  map: "etan"       ""          "L_DONE"  	7	
+	  map: "itan"       ""          "L_DONE"  	7	
+	  map: "ican"       ""          "L_DONE"  	7	
+	  map: "esan"       ""          "L_DONE"  	7	
+	  map: "ian"        ""          "L_DONE"  	6	
+	  map: "i†n"        ""          "L_DONE"  	6	
+	  map: "an"         ""          "L_DONE"  	5	
+	  map: "†n"         ""          "L_DONE"  	5	
+	  map: "ain"        ""          "L_DONE"  	7	
+	  map: "oid"        ""          "L_DONE"  	5	
+	  map: "ad"         ""          "L_DONE"  	5	
+	  map: "ud"         ""          "L_DONE"  	5	
+	  map: "ezed"       ""          "L_DONE"  	7	
+	  map: "ed"         ""          "L_DONE"  	5	
+	  map: "id"         ""          "L_DONE"  	5	
+	  map: "onÇsim"     ""          "L_DONE"  	9	
+	  map: "Çsim"       ""          "L_DONE"  	7	
+	  map: "im"         ""          "L_DONE"  	5	
+	  map: "arr"        ""          "L_DONE"  	6	
+	  map: "urr"        ""          "L_DONE"  	6	
+	  map: "orr"        ""          "L_DONE"  	6	
+	  map: "orri"       ""          "L_DONE"  	7	
+	  map: "ast"        ""          "L_DONE"  	6	
+	  map: "all"        ""          "L_DONE"  	6	
+	  map: "ull"        ""          "L_DONE"  	6	
+	  map: "elical"     ""          "L_DONE"  	9	
+	  map: "orial"      ""          "L_DONE"  	8	
+	  map: "atal"       ""          "L_DONE"  	7	
+	  map: "ital"       ""          "L_DONE"  	7	
+	  map: "inal"       ""          "L_DONE"  	7	
+	  map: "oral"       ""          "L_DONE"  	7	
+	  map: "onal"       ""          "L_DONE"  	7	
+	  map: "anal"       ""          "L_DONE"  	7	
+	  map: "abal"       ""          "L_DONE"  	7	
+	  map: "aval"       ""          "L_DONE"  	7	
+	  map: "al"         ""          "L_DONE"  	5	
+	  map: "el"         ""          "L_DONE"  	5	
+	  map: "il"         ""          "L_DONE"  	5	
+	  map: "ol"         ""          "L_DONE"  	5	
+	  map: "ul"         ""          "L_DONE"  	5	
+	  map: "ose"        ""          "L_DONE"  	6	
+	  map: "one"        ""          "L_DONE"  	6	
+	  map: "aje"        ""          "L_DONE"  	6	
+	  map: "†je"        ""          "L_DONE"  	6	
+	  map: "ane"        ""          "L_DONE"  	6	
+	  map: "ade"        ""          "L_DONE"  	6	
+	  map: "ete"        ""          "L_DONE"  	6	
+	  map: "e"          ""          "L_DONE"  	4	
+	  map: "i"          ""          "L_DONE"  	4	
+	  map: "°"          ""          "L_DONE"  	4	
+	  map: "y"          ""          "L_DONE"  	2	
+
+	label: L_ADJUSTMENT
+	  map: "†"          "a"         "L_NORMALIZE"	 1	
+	  map: "Ç"          "e"         "L_NORMALIZE"	 1	
+	  map: "°"          "i"         "L_NORMALIZE"	 1	
+	  map: "¢"          "o"         "L_NORMALIZE"	 1	
+	  map: "£"          "u"         "L_NORMALIZE"	 1	
+
+	label: L_NORMALIZE
+	  map: "anduv"      "and"       "L_DONE"  	5	
+	  map: "apriet"     "apret"     "L_DONE"  	6	
+	  map: "atrav"      "atraves"   "L_DONE"  	5	
+	  map: "biert"      "br"        "L_DONE"  	6	
+	  map: "caig"       "ca"        "L_DONE"  	4	
+	  map: "cep"        "cep"       "L_DONE"	4
+	  map: "cep"        "cab"       "L_DONE"	3
+	  map: "cup"        "cep"       "L_DONE"	4
+	  map: "cup"        "cab"       "L_DONE"	3
+	  map: "compit"     "compet"    "L_DONE"  	6	
+	  map: "conzib"     "conzeb"    "L_DONE"  	6	
+	  map: "conf"       "confes"    "L_DONE"  	4	
+	  map: "corrij"     "correj"    "L_DONE"  	6	
+	  map: "cuerd"      "cord"      "L_DONE"  	6	
+	  map: "cuest"      "cost"      "L_DONE"  	6	
+	  map: "derrit"     "derret"    "L_DONE"  	6	
+	  map: "diestr"     "destr"     "L_DONE"  	6	
+	  map: "dig"        "dez"       "L_DONE"  	3	
+	  map: "diz"        "dez"       "L_DONE"  	3	
+	  map: "dij"        "dez"       "L_DONE"  	3	
+	  map: "dich"       "dez"       "L_DONE"  	4	
+	  map: "duerm"      "dorm"      "L_DONE"  	5	
+	  map: "durm"       "dorm"      "L_DONE"  	4	
+	  map: "duj"        "duz"       "L_DONE"  	3	
+	  map: "duct"       "duz"       "L_DONE"  	4	
+	  map: "ducz"       "duz"       "L_DONE"  	4	
+	  map: "ieg"        "eg"        "L_DONE"  	4	
+	  map: "elij"       "elej"      "L_DONE"  	4	
+	  map: "scrit"      "scrib"     "L_DONE"  	5	
+	  map: "scripz"     "scrib"     "L_DONE"  	6	
+	  map: "iend"       "end"       "L_DONE"  	5	
+	  map: "ient"       "ent"       "L_DONE"  	5	
+	  map: "iens"       "ens"       "L_DONE"  	5	
+	  map: "ienz"       "enz"       "L_DONE"  	7	
+	  map: "ierb"       "erb"       "L_DONE"  	5	
+	  map: "ierd"       "erd"       "L_DONE"  	5	
+	  map: "irg"        "erg"       "L_DONE"  	3	
+	  map: "yerg"       "erg"       "L_DONE"  	4	
+	  map: "iern"       "ern"       "L_DONE"  	7	
+	  map: "ierr"       "err"       "L_DONE"  	5	
+	  map: "yerr"       "err"       "L_DONE"  	4	
+	  map: "iert"       "ert"       "L_DONE"  	6	
+	  map: "ierv"       "erv"       "L_DONE"  	5	
+	  map: "irv"        "erv"       "L_DONE"  	4	
+	  map: "ies"        "es"        "L_DONE"  	7	
+	  map: "estuv"      "est"       "L_DONE"  	5	
+	  map: "iest"       "est"       "L_DONE"  	7	
+	  map: "iev"        "ev"        "L_DONE"  	4	
+	  map: "fier"       "fer"       "L_DONE"  	6	
+	  map: "fir"        "fer"       "L_DONE"  	5	
+	  map: "gim"        "gem"       "L_DONE"  	3	
+	  map: "gier"       "ger"       "L_DONE"  	6	
+	  map: "gir"        "ger"       "L_DONE"  	5	
+	  map: "ha"         "hab"       "L_DONE"  	2	
+	  map: "hub"        "hab"       "L_DONE"  	3	
+	  map: "hag"        "haz"       "L_DONE"  	3	
+	  map: "hiz"        "haz"       "L_DONE"  	3	
+	  map: "hech"       "haz"       "L_DONE"  	4	
+	  map: "hiel"       "hel"       "L_DONE"  	4	
+	  map: "hier"       "her"       "L_DONE"  	4	
+	  map: "hir"        "her"       "L_DONE"  	3	
+	  map: "impres"     "imprim"    "L_DONE"  	6	
+	  map: "impr"       "imprim"    "L_DONE"  	4	
+	  map: "jueg"       "jug"       "L_DONE"  	4	
+	  map: "lluev"      "llov"      "L_DONE"  	5	
+	  map: "mid"        "med"       "L_DONE"  	3	
+	  map: "miel"       "mel"       "L_DONE"  	4	
+	  map: "miembr"     "membr"     "L_DONE"  	6	
+	  map: "mint"       "ment"      "L_DONE"  	4	
+	  map: "muer"       "mor"       "L_DONE"  	4	
+	  map: "mur"        "mor"       "L_DONE"  	3	
+	  map: "muert"      "mor"       "L_DONE"  	5	
+	  map: "muestr"     "mostr"     "L_DONE"  	6	
+	  map: "muev"       "mov"       "L_DONE"  	4	
+	  map: "nuev"       "nov"       "L_DONE"  	4	
+	  map: "oig"        "o"         "L_DONE"  	3	
+	  map: "uebl"       "obl"       "L_DONE"  	5	
+	  map: "uel"        "ol"        "L_DONE"  	4	
+	  map: "uelg"       "olg"       "L_DONE"  	5	
+	  map: "uent"       "ont"       "L_DONE"  	5	
+	  map: "uenz"       "onz"       "L_DONE"  	8	
+	  map: "uerd"       "ord"       "L_DONE"  	5	
+	  map: "uerz"       "orz"       "L_DONE"  	5	
+	  map: "uez"        "oz"        "L_DONE"  	4	
+	  map: "pid"        "ped"       "L_DONE"  	3	
+	  map: "pint"       "pent"      "L_DONE"  	8	
+	  map: "piez"       "pez"       "L_DONE"  	6	
+	  map: "plug"       "plaz"      "L_DONE"  	4	
+	  map: "pued"       "pod"       "L_DONE"  	4	
+	  map: "pud"        "pod"       "L_DONE"  	3	
+	  map: "pong"       "pon"       "L_DONE"  	4	
+	  map: "pus"        "pon"       "L_DONE"  	3	
+	  map: "puest"      "pon"       "L_DONE"  	5	
+	  map: "post"       "pon"       "L_DONE"  	4	
+	  map: "prueb"      "prob"      "L_DONE"  	5	
+	  map: "cier"       "cer"       "L_DONE"  	5	
+	  map: "ciebr"      "cebr"      "L_DONE"  	6	
+	  map: "cir"        "cer"       "L_DONE"  	6	
+	  map: "cis"        "cer"       "L_DONE"  	4	
+	  map: "ri"         "re"        "L_DONE"  	2	
+	  map: "rind"       "rend"      "L_DONE"  	4	
+	  map: "ri§"        "re§"       "L_DONE"  	3	
+	  map: "repit"      "repet"     "L_DONE"  	5	
+	  map: "rued"       "rod"       "L_DONE"  	4	
+	  map: "rot"        "romp"      "L_DONE"  	3	
+	  map: "rupz"       "romp"      "L_DONE"  	4	
+	  map: "sep"        "sab"       "L_DONE"  	3	
+	  map: "sup"        "sab"       "L_DONE"  	3	
+	  map: "salg"       "sal"       "L_DONE"  	4	
+	  map: "satisfag"   "satisfaz"  "L_DONE"  	8	
+	  map: "satisfiz"   "satisfaz"  "L_DONE"  	8	
+	  map: "satisfech"  "satisfaz"  "L_DONE"  	9	
+	  map: "satisf"     "satisfaz"  "L_DONE"  	6	
+	  map: "sig"        "seg"       "L_DONE"  	3	
+	  map: "sint"       "sent"      "L_DONE"  	4	
+	  map: "suel"       "sol"       "L_DONE"  	4	
+	  map: "sueld"      "sold"      "L_DONE"  	5	
+	  map: "suelt"      "solv"      "L_DONE"  	7	
+	  map: "suelt"      "solt"      "L_DONE"  	5	
+	  map: "suelv"      "solv"      "L_DONE"  	5	
+	  map: "suen"       "son"       "L_DONE"  	4	
+	  map: "sue§"       "so§"       "L_DONE"  	4	
+	  map: "stri§"      "stre§"     "L_DONE"  	6	
+	  map: "tiembl"     "tembl"     "L_DONE"  	6	
+	  map: "teng"       "ten"       "L_DONE"  	4	
+	  map: "tien"       "ten"       "L_DONE"  	4	
+	  map: "tuv"        "ten"       "L_DONE"  	3	
+	  map: "ti§"        "te§"       "L_DONE"  	3	
+	  map: "tuest"      "tost"      "L_DONE"  	5	
+	  map: "traig"      "tra"       "L_DONE"  	5	
+	  map: "traj"       "tra"       "L_DONE"  	4	
+	  map: "trop"       "tropez"    "L_DONE"  	4	
+	  map: "ve"         "v"         "L_DONE"  	2	
+	  map: "vist"       "v"         "L_DONE"  	4	
+	  map: "valg"       "val"       "L_DONE"  	4	
+	  map: "veng"       "ven"       "L_DONE"  	4	
+	  map: "vien"       "ven"       "L_DONE"  	4	
+	  map: "vin"        "ven"       "L_DONE"  	3	
+	  map: "virt"       "vert"      "L_DONE"  	6	
+	  map: "vist"       "vest"      "L_DONE"  	4	
+	  map: "vuelc"      "volc"      "L_DONE"  	5	
+	  map: "vuelt"      "volv"      "L_DONE"  	5	
+	  map: "vuelv"      "volv"      "L_DONE"  	5	
+	  map: "zi§"        "ze§"       "L_DONE"  	3	
+	  map: "y"          ""          "L_DONE"  	2	
+
+	label: L_DONE
+
+	}
+}
+$$
+ 
