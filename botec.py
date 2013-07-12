@@ -10,7 +10,6 @@ try:
 except Exception, e:
     print "GTK no disponible"
     sys.exit(1)
-
 import sqlite3
 import curva
 import reportar
