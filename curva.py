@@ -5,10 +5,8 @@ import matplotlib.dates as mdates
 import time
 import datetime
 from dateutil.parser import parse as dateparse
-import datetime as dt # Importamos el módulo datetime
-
+import datetime as dt  # Importamos el módulo datetime
 import matplotlib.ticker as ticker
-
 
 conn = sqlite3.connect('db/db.sqlite')
 c = conn.cursor()
@@ -50,14 +48,14 @@ def principal(datoinicio, datofin, datdic):
                 Configuracion where NombreGrafico='%s'" % (str(a), str(a),
                 str(a), datdic)
             query(q2)
-            
+
             for dato in c:
                 if dato[0]:
                     datoscurva.append(str(dato[0]))
 
         curv2 = []
         if datdic == "Tina 1":
-            for  pt1 in range(0, 12):
+            for pt1 in range(0, 12):
                 if pt1 % 2 == 0:
                     curv2.append(curvas[pt1])
             curvas = curv2
@@ -93,7 +91,8 @@ def principal(datoinicio, datofin, datdic):
         for a in range(1, total):
             par.update({"par%s" % (str(a)): par['host'].twinx()})
 
-        plt.subplots_adjust(left=0.07, right=pre2[total - 1])
+        plt.subplots_adjust(left=0.07, right=pre2[total - 1],
+                            top=0.79, bottom=0.05)
 
         offset = 1  # espacio entre eje Y
 
@@ -105,13 +104,54 @@ def principal(datoinicio, datofin, datdic):
             offset += 0.1
         datocurva = datoscurva[0].split(",")
         par["host"].set_ylim(int(datocurva[1]), int(datocurva[2]))
+
+        # ------ OBTENER MAYOR CANTIDAD DE  PUNTOS
+        maximopunto = 0
         for ah in range(0, total):
             busqueda = 0  # 0 dato inicial #1 dato final
             puntosx = []
             contenidoy = []
             #leer los archivos de las curvas y generar lista de puntos
             f = open(curvas[ah])
-            i =     0
+            i = 0
+            for linea in f:
+                if linea[0:1] != "N":
+                    if busqueda == 0:
+                        dat1 = fdat(linea[0:17])
+                        dat2 = fdat(datoinicio)
+                        dinicio = dat2
+                        if dat2 <= dat1:
+                            puntosx.append(dat1)
+                            # print dat1
+                            busqueda = 1
+                    elif busqueda == 1:
+                        contenidoy.append(float(linea[18:26]))
+                        dat1 = fdat(linea[0:17])
+                        dat2 = fdat(datofin)
+                        dfin = dat2
+                        # if linea[0:17] < datofin:
+
+                        if dat2 < dat1:
+                            break
+                            busqueda = 2
+                        else:
+                            datx = fdat(linea[0:17])
+                            puntosx.append(datx)
+
+                    else:
+                        break
+            if len(puntosx) > maximopunto:
+                maximopunto = len(puntosx)
+
+        # ------- FIN
+        for ah in range(0, total):
+
+            busqueda = 0  # 0 dato inicial #1 dato final
+            puntosx = []
+            contenidoy = []
+            #leer los archivos de las curvas y generar lista de puntos
+            f = open(curvas[ah])
+            i = 0
 
             for linea in f:
                 if linea[0:1] != "N":
@@ -129,17 +169,26 @@ def principal(datoinicio, datofin, datdic):
                         dat2 = fdat(datofin)
                         dfin = dat2
                         # if linea[0:17] < datofin:
-                        
-                        if  dat2 < dat1:
+
+                        if dat2 < dat1:
                             break
                             busqueda = 2
                         else:
                             datx = fdat(linea[0:17])
                             puntosx.append(datx)
-                            
+
                     else:
                         break
-            
+            try:
+                allenar = maximopunto - len(puntosx)
+                ultimoallenarx = puntosx[len(puntosx) - 1]
+
+                ultimoallenary = contenidoy[len(contenidoy) - 1]
+                for w in range(0, allenar):
+                    puntosx.append(ultimoallenarx)
+                    contenidoy.append(ultimoallenary)
+            except:
+                pass
             macroy.append(contenidoy)
             contenidox = map(lambda s: time.mktime(
                         datetime.datetime.strptime(s,
@@ -155,27 +204,32 @@ def principal(datoinicio, datofin, datdic):
             ax = 0
             for a in contenidox:
                 contx.append(int(ax))
-                ax += 10
-            
+                ax += 1
+
             con = len(contenidox)
-            #contenidox = map(datetime.datetime.fromtimestamp, contenidox) #dts es elcontenido x
+            #contenidox = map(datetime.datetime.fromtimestamp, contenidox)
+                #dts es elcontenido x
             colores = ["b-", "r-", "g-", "#000000", "#008b8b", "#340B8C",
                          "#ff6136", "#b8860b", "#E4007C", "#FFCC00", "#A62A2A",
                         "#ff7f50"]
             datocurva = datoscurva[ah].split(",")
 
-            xxy = [dt.datetime.strptime(dax,'%Y-%m-%d %H:%M:%S') for dax in puntosx]
+            xxy = [dt.datetime.strptime(dax, '%Y-%m-%d %H:%M:%S')
+                                            for dax in puntosx]
             # if ah == 0:
 
             p.update({"p%s" % (str(ah + 1)): par['host'].plot(contx,
                     contenidoy, colores[ah], label=datocurva[0])})
 
             # else:
-            #     p.update({"p%s" % (str(ah + 1)): par['par%s' % (str(ah))].plot(contenidox,
+            #     p.update({"p%s" % (str(ah + 1)): par['par%s' % (str(ah))].
+                # plot(contenidox,
             #         contenidoy, colores[ah], label=datocurva[0])})
         #MIN Y MAX DE LAS Y
-        # par["host"].xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M:%S'))
-        # par["host"].xaxis.set_major_locator(mdates.SecondLocator(interval = 20))
+        # par["host"].xaxis.set_major_formatter(mdates.DateFormatter
+            # ('%Y-%m-%d %H:%M:%S'))
+        # par["host"].xaxis.set_major_locator(mdates.SecondLocator
+            # (interval = 20))
         maximo = 0
         maximo2 = 0
         for a in lmaxim:
@@ -221,6 +275,9 @@ def principal(datoinicio, datofin, datdic):
         for co in range(1, total + 1):
             lines.append(p["p%s" % (str(co))][0])
         par['host'].legend(lines, [l.get_label() for l in lines])
+        par["host"].legend(bbox_to_anchor=(0., 1.1, 1., .102), loc="right",
+                                    ncol=2, mode="expand", borderaxespad=0.)
+
         plt.draw()
         q = "Select MostrarGraficas from ConfiguracionGlobal limit 1"
         query(q)

@@ -50,9 +50,9 @@ def grafica1(listnombres, c, pos):
     q = "select * from temporales where id='1'"
     query(q)
     if pos == "1":
-        espacios = [11.0, 590, 790, 590, 570, 550, 530]
+        espacios = [11.0, 580, 790, 560, 540, 520, 500]
     else:
-        espacios = [7.1, 300, 510, 300, 280, 260, 240]
+        espacios = [6.7, 260, 480, 240, 220, 200, 180]
     for a in b:
         a = a
     posi = 0
@@ -86,9 +86,9 @@ def grafica2(listnombres, c, pos):
     q = "select * from temporales where id='2'"
     query(q)
     if pos == "1":
-        espacios = [10.8, 570, 777, 570, 550, 530, 510]
+        espacios = [10.8, 560, 777, 550, 530, 510, 490]
     else:
-        espacios = [7.1, 300, 510, 300, 280, 260, 240]
+        espacios = [7.1, 300, 510, 280, 260, 240, 220]
     for a in b:
         a = a
     posi = 0
@@ -121,12 +121,12 @@ def grafica3(listnombres, c):
     #GRAFICA 3 ----------------------------------------------------------------
     q = "select * from temporales where id='3'"
     query(q)
-    espacios = [10.7, 770, 580, 560, 540, 520, 500]
+    espacios = [10.7, 770, 550, 530, 510, 490, 470]
     posi = 0
     for a in b:
         a = a
     fichero_imagen = "%s.png" % listnombres[2]
-    c.drawImage(fichero_imagen, -20, 580, 619, 200)
+    c.drawImage(fichero_imagen, -20, 560, 619, 200)
     framePage(c, listnombres[2], espacios[posi])
     posi += 1
     c.drawString(220, espacios[posi], a[0])
@@ -152,12 +152,12 @@ def grafica4(listnombres, c):
     #GRAFICA 4 ----------------------------------------------------------------
     q = "select * from temporales where id='4'"
     query(q)
-    espacios = [6.8, 490, 300, 280, 260, 240, 220]
+    espacios = [6.5, 465, 250, 230, 210, 190, 170]
     posi = 0
     for a in b:
         a = a
     fichero_imagen = "%s.png" % listnombres[3]
-    c.drawImage(fichero_imagen, -20, 300, 619, 200)
+    c.drawImage(fichero_imagen, -20, 260, 619, 200)
     framePage(c, listnombres[3], espacios[posi])
     posi += 1
     c.drawString(220, espacios[posi], a[0])
@@ -184,12 +184,13 @@ def grafica5(listnombres, c):
     #GRAFICA 5 ----------------------------------------------------------------
     q = "select * from temporales where id='5'"
     query(q)
-    espacios = [11.0, 790, 600, 580, 560, 540, 520]
+    espacios = [11.0, 790, 580, 560, 540, 520, 500]
+    #titulo, hora,
     posi = 0
     for a in b:
         a = a
     fichero_imagen = "%s.png" % listnombres[4]
-    c.drawImage(fichero_imagen, -20, 600, 619, 200)
+    c.drawImage(fichero_imagen, -20, 590, 619, 200)
     framePage(c, listnombres[4], espacios[posi])
     posi += 1
     c.drawString(220, espacios[posi], a[0])

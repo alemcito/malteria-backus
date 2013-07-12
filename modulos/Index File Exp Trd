@@ -5,12 +5,6 @@ PLC01:AnI:N167:Val/x/t
 PLC01:VLT:N001_OUT:Val/x/t	
 PLC01:AnI:N177:Val/x/t	
 PLC01:VLT:N101_OUT:Val/x/t	
-PLC01:AnI:N100:Val/x/t	
-PLC01:AnI:N110:Val/x/t	
-PLC01:AnI:N167:Val/x/t	
-PLC01:VLT:N001_OUT:Val/x/t	
-PLC01:AnI:N177:Val/x/t	
-PLC01:VLT:N101_OUT:Val/x/t	
 PLC01:Seq:N003:Val/x/t	
 #Datos Tina 2	
 PLC01:AnI:N099:Val/x/t	
@@ -22,7 +16,7 @@ PLC01:VLT:N102_OUT:Val/x/t
 PLC01:Seq:N004:Val/x/t	
 #Datos Tina 3	
 PLC01:AnI:N098:Val/x/t	
-PLC01:AnI:N108:Val/x/t
+PLC01:AnI:N108:Val/x/t	
 PLC01:AnI:N169:Val/x/t	
 PLC01:VLT:N003_OUT:Val/x/t	
 PLC01:AnI:N177:Val/x/t	
@@ -199,7 +193,7 @@ PLC01:AnI:N143:Val/x/t
 PLC01:AnI:N147:Val/x/t	
 PLC01:AnI:N146:Val/x/t	
 PLC01:AnI:N145:Val/x/t	
-PLC01:PID:N029_32_OUT:Val/x/t	
+PLC01:PID:N029_32_Out:Val/x/t	
 PLC01:Seq:N028:Val/x/t	
 #Datos Horno B	
 PLC01:AnI:N186:Val/x/t	
@@ -208,7 +202,7 @@ PLC01:AnI:N152:Val/x/t
 PLC01:AnI:N156:Val/x/t	
 PLC01:AnI:N155:Val/x/t	
 PLC01:AnI:N154:Val/x/t	
-PLC01:PID:N033_36_OUT:Val/x/t	
+PLC01:PID:N033_36_Out:Val/x/t	
 PLC01:Seq:N029:Val/x/t	
 #Datos Horno C	
 PLC01:AnI:N115:Val/x/t	

@@ -18,8 +18,11 @@ import matplotlib
 import reportlab
 import platform
 import subprocess
+import glob
 conn = sqlite3.connect('db/db.sqlite')
 c = conn.cursor()
+clic = False
+clik = False
 
 
 class main:
@@ -136,18 +139,16 @@ class main:
         print "* Versión de Python -> %s           *" %\
             platform.python_version()
         vpygtk = gtk.pygtk_version
-        print "* Versión de PyGTK -> %s.%s.%s           *" % (vpygtk[0], vpygtk[1], vpygtk[2])
+        print "* Versión de PyGTK -> %s.%s.%s           *" % (vpygtk[0],
+                                                            vpygtk[1],
+                                                            vpygtk[2])
         print "* Versión de SQLITE -> %s           *" % sqlite3.version
         print "****************************************"
         # print "Versión de Python -> %s" % python.__version__
-        
 
-
-        listaelementos=gtk.ListStore(str)
-        for a in range(1,32):
+        listaelementos = gtk.ListStore(str)
+        for a in range(1, 32):
             listaelementos.append([a])
-
-
         self.cbxdia.set_model(listaelementos)
         self.cbxdia1.set_model(listaelementos)
         render = gtk.CellRendererText()
@@ -158,7 +159,7 @@ class main:
         self.cbxdia.set_active(0)
         self.cbxdia1.set_active(0)
 
-        listaelementos2=gtk.ListStore(str)
+        listaelementos2 = gtk.ListStore(str)
 
         for a in range(1, 13):
             listaelementos2.append([a])
@@ -171,7 +172,7 @@ class main:
         self.cbxmes.set_active(0)
         self.cbxmes1.set_active(0)
 
-        listaelementos3=gtk.ListStore(str)
+        listaelementos3 = gtk.ListStore(str)
 
         for a in range(2013, 2015):
             listaelementos3.append([a])
@@ -187,21 +188,20 @@ class main:
     def on_button2_clicked(self, widget):
         self.configuracion.hide()
 
-
-
     def on_button1_clicked(self, widget):
-
-        inicio =  "%s.%s.%s" % (self.cbxdia.get_active_text(),self.cbxmes.get_active_text(), self.cbxano.get_active_text())
-        fin =  "%s.%s.%s" % (self.cbxdia1.get_active_text(),self.cbxmes1.get_active_text(), self.cbxano1.get_active_text())
-
-        os.system('bde_exp_trd.exe -I="Index File Exp Trd" -w -DA=%s -DE=%s' % (inicio, fin))
-        
+        inicio = "%s.%s.%s" % (self.cbxdia.get_active_text(),
+                                self.cbxmes.get_active_text(),
+                                self.cbxano.get_active_text())
+        fin = "%s.%s.%s" % (self.cbxdia1.get_active_text(),
+                            self.cbxmes1.get_active_text(),
+                            self.cbxano1.get_active_text())
+        os.system('bde_exp_trd.exe -I="Index File Exp Trd" -w -DA=%s -DE=%s' %
+        (inicio, fin))
 
     def on_cbxsino_changed(self, widget):
         quer = "update ConfiguracionGlobal set MostrarGraficas = '%s' where Id\
  = '1'" % self.cbxsino.get_active()
         query(quer, self)
-
 
     def on_btnsave_clicked(self, widget):
         #obtener variables
@@ -225,15 +225,12 @@ class main:
         query(query2, self)
         self.indiceoculto.set_text(nombre)
 
-
     def on_btnarchivos_clicked(self, widget):
         act(self.filearchivo.get_filename(), "EnlaceArchivos",
             self.lblrutaarchivos, self)
 
-
     def on_btnpdf_clicked(self, widget):
         act(self.filepdf.get_filename(), "EnlacePdf", self.lblrutapdf, self)
-
 
     def on_linkbutton1_clicked(self, widget):
         self.configuracion.show()
@@ -243,6 +240,7 @@ class main:
         ls2 = gtk.ListStore(str)
         for rpta in c:
             repta = list(rpta)
+            print rpta
             ls.append([repta[0]])
         ls2.append(['NO'])
         ls2.append(['SI'])
@@ -268,43 +266,50 @@ class main:
         # for rpta in c:
            # self.cbxsino.set_active(1)
 
-
     def on_exportar_clicked(self, widget):
         # reportar.principal(lista)
-        lote = self.txtlote.get_text()
-        if len(lote) > 0:
-            if self.hora1.get_text() == "":
-                self.mensaje.set_markup("<span color='red'>Primero debe de\
+        global clic
+        global clik
+        if clic:
+            clic = False
+            clik = True
+            lote = self.txtlote.get_text()
+            if len(lote) > 0:
+                if self.hora1.get_text() == "":
+                    self.mensaje.set_markup("<span color='red'>Primero debe de\
  Graficar, por favor de clic en 'Mostrar Gráficas'</span>")
-            else:
-                lista5 = {}
-                query("select NombreGrafico, RutaLote from Configuracion",
-                    self)
-                datoinicio = 0
-                datofin = 0
-                for valquer in c:
-                    f = open(valquer[1])
-                    for linea in f:
-                        if linea[0] != "N":
-                            dat = linea[18:22]
-                            try:
-                                datoa = int(dat)
-                            except Exception, e:
-                                datoa = dat[0:3]
-                            datoa = str(datoa)
-                            
-                            if datoa == lote:
-                                lista5.update({valquer[0]: valquer[1]})
-                                break
+                else:
+                    lista5 = {}
+                    query("select NombreGrafico, RutaLote from Configuracion",
+                        self)
+                    datoinicio = 0
+                    datofin = 0
+                    for valquer in c:
+                        f = open(valquer[1])
+                        for linea in f:
+                            if linea[0] != "N":
+                                dat = linea[18:22]
+                                try:
+                                    datoa = int(dat)
+                                except Exception, e:
+                                    datoa = dat[0:3]
+                                datoa = str(datoa)
 
-                reportar.principal(lista5, lote)
-                query("update temporales set tiemporemojo = '',\
-ultimatemperatura= '', diferenciatemperatura = '', delta = '', \
-datoinicial = '' ", self)
-                abrirpdf(self, lote)
-        else:
-            self.mensaje.set_markup("<span color='red'>Ingrese Nro de\
+                                if datoa == lote:
+                                    lista5.update({valquer[0]: valquer[1]})
+                                    break
+
+                    reportar.principal(lista5, lote)
+                    query("update temporales set tiemporemojo = '',\
+    ultimatemperatura= '', diferenciatemperatura = '', delta = '', \
+    datoinicial = '' ", self)
+                    abrirpdf(self, lote)
+            else:
+                self.mensaje.set_markup("<span color='red'>Ingrese Nro de\
  Lote.</span>")
+        else:
+            self.mensaje.set_markup("<span color='red'>Ya realizó\
+ la exportación del lote.</span>")
 
     def on_cbxgrafica_changed(self, widget):
         sel = self.cbxgrafica.get_active_text()
@@ -320,8 +325,12 @@ datoinicial = '' ", self)
             llena_text_view(38, self.twmaximo, valor)
         self.lblmsg.set_text("")
 
-
     def on_btngrafica_clicked(self, widget):
+        global clic
+        global clik
+        if not clik:
+            clic = True
+        eliminar_imagenes(self)
         lote = self.txtlote.get_text()
         lista5 = {}
         query("select EnlacePdf, EnlaceArchivos from ConfiguracionGlobal\
@@ -366,7 +375,7 @@ datoinicial = '' ", self)
                                 dato1 = dat[0:3]
 
                             dato = str(dato1)
-                            
+
                             if dato == lote:
                                 lista5.update({valquer[0]: valquer[1]})
                                 break
@@ -380,6 +389,7 @@ datoinicial = '' ", self)
                 elif lenlista5 < 4:
                     self.mensaje.set_markup("<span color='red'>SE ENCONTRARON\
  MENOS DE 4 GRAFICAS</span>")
+                    dibuja = 0
                 else:
                     self.mensaje.set_markup("<span color='red'>SE ENCONTRARON\
  %s GRAFICAS</span>" % (str(lenlista5)))
@@ -398,7 +408,6 @@ datoinicial = '' ", self)
                                     except Exception, e:
                                         datoa = dat[0:3]
                                     datoa = str(datoa)
-                                    
                                     if sgt == 0:
                                         if datoa == lote:
                                             datoinicio = linea
@@ -406,7 +415,6 @@ datoinicial = '' ", self)
                                     else:
                                         datofin = linea
                                         break
-                                    
                         curva.principal(datoinicio, datofin, key)
                 cimg = [self.image1, self.image2, self.image3,
                         self.image4, self.image5]
@@ -415,7 +423,7 @@ datoinicial = '' ", self)
                 ccont = 0
                 for img in lista5:
                     pixbuf = gtk.gdk.pixbuf_new_from_file("%s.png" % img)
-                    scaled_buf = pixbuf.scale_simple(999, 323,
+                    scaled_buf = pixbuf.scale_simple(999, 333,
                                                     gtk.gdk.INTERP_BILINEAR)
                     cimg[ccont].set_from_pixbuf(scaled_buf)
                     cimg[ccont].show()
@@ -571,6 +579,11 @@ def abrirpdf(self, lote):
     os.system("Adobe\Reader9.0\Reader\AcroRd32.exe %s/%s.pdf" % (str(elpdf),
                                                                 str(lote)))
 
+
+def eliminar_imagenes(self):
+    lista = glob.glob("*.png")
+    for a in lista:
+        os.remove(a)
 
 if __name__ == "__main__":
     main()
