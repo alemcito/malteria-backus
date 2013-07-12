@@ -582,8 +582,9 @@ def abrirpdf(self, lote):
 
 def eliminar_imagenes(self):
     lista = glob.glob("*.png")
-    for a in lista:
-        os.remove(a)
+    if len(lista) > 0:
+        for a in lista:
+            os.remove(a)
 
 if __name__ == "__main__":
     main()
