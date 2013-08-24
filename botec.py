@@ -14,11 +14,13 @@ import sqlite3
 import curva
 import reportar
 import os
+import sys
 import matplotlib
 import reportlab
 import platform
 import subprocess
 import glob
+import datetime
 conn = sqlite3.connect('db/db.sqlite')
 c = conn.cursor()
 clic = False
@@ -132,6 +134,11 @@ class main:
             "on_btnarchivos_clicked": self.on_btnarchivos_clicked
         }
         self.builder.connect_signals(dic)
+        print "INICIANDO SISTEMA DE INFORMES MALTERIA LIMA"
+        inicio = datetime.date.today().strftime("%d.%m.%Y")
+        fin = (datetime.date.today() -
+                datetime.timedelta(days=7)).strftime("%d.%m.%Y")
+
         print " "
         print "********** REPORTE BOTEC v1.0 **********"
         print "* Versión de MatPlotLib -> %s       *" % matplotlib.__version__
@@ -195,8 +202,8 @@ class main:
         fin = "%s.%s.%s" % (self.cbxdia1.get_active_text(),
                             self.cbxmes1.get_active_text(),
                             self.cbxano1.get_active_text())
-        os.system('bde_exp_trd.exe -I="Index File Exp Trd" -w -DA=%s -DE=%s' %
-        (inicio, fin))
+
+        actualizar_datos_botec(inicio, fin, self)
 
     def on_cbxsino_changed(self, widget):
         quer = "update ConfiguracionGlobal set MostrarGraficas = '%s' where Id\
@@ -240,7 +247,6 @@ class main:
         ls2 = gtk.ListStore(str)
         for rpta in c:
             repta = list(rpta)
-            print rpta
             ls.append([repta[0]])
         ls2.append(['NO'])
         ls2.append(['SI'])
@@ -330,6 +336,7 @@ class main:
         global clik
         if not clik:
             clic = True
+            clik = False
         eliminar_imagenes(self)
         lote = self.txtlote.get_text()
         lista5 = {}
@@ -585,6 +592,14 @@ def eliminar_imagenes(self):
     if len(lista) > 0:
         for a in lista:
             os.remove(a)
+
+
+def actualizar_datos_botec(inicio, fin, self):
+    print "1"
+    os.system('bde_exp_trd.exe -I="Index File Exp Trd" -w -DA=%s -DE=%s' %
+        (inicio, fin))
+    print "2"
+
 
 if __name__ == "__main__":
     main()

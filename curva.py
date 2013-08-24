@@ -104,91 +104,138 @@ def principal(datoinicio, datofin, datdic):
             offset += 0.1
         datocurva = datoscurva[0].split(",")
         par["host"].set_ylim(int(datocurva[1]), int(datocurva[2]))
+        par["host"].grid(True)
 
         # ------ OBTENER MAYOR CANTIDAD DE  PUNTOS
         maximopunto = 0
+
+        for ah in range(0, total): # contar lo maximos puntos
+            busqueda2 = 0
+            nopuntosx = []
+            g = open(curvas[ah])
+            for linea2 in g:
+                if linea2[0:1] != "N":
+                    if busqueda2 == 0:
+                        dat1 = fdat(linea2[0:17]) # Dato de la base de datos
+                        dat2 = fdat(datoinicio)
+
+                        if dat2 <= dat1:
+                            nopuntosx.append(dat1)
+                            busqueda2 = 1
+                    elif busqueda2 == 1:
+                        dat1 = fdat(linea2[0:17])
+
+                        dat2 = fdat(datofin)
+                        dfin = dat2
+
+                        if dat2 < dat1:
+                            break
+                            busqueda2 = 2
+                        else:
+                            datx = fdat(linea2[0:17])
+                            nopuntosx.append(datx)
+
+                if len(nopuntosx) > maximopunto:
+                    maximopunto = len(nopuntosx)
+
         for ah in range(0, total):
             busqueda = 0  # 0 dato inicial #1 dato final
+            
             puntosx = []
             contenidoy = []
+            tempx = 0
+            fechatempx = fdat("2013-01-01 00:00:00")
             #leer los archivos de las curvas y generar lista de puntos
             f = open(curvas[ah])
+            
             i = 0
+            dattempinicio =""
+            dattempfinal =""
+
+
+            
+            limdotmaxim = 0
             for linea in f:
                 if linea[0:1] != "N":
                     if busqueda == 0:
-                        dat1 = fdat(linea[0:17])
+                        dat1 = fdat(linea[0:17]) # Dato de la base de datos
                         dat2 = fdat(datoinicio)
+                        datoyinicio = 0.0
+                        datoyfinal = 0.0
                         dinicio = dat2
                         if dat2 <= dat1:
+                            datoyfinal = float()
+                            contenidoy.append(datoyfinal)
                             puntosx.append(dat1)
-                            # print dat1
+                            dattempfinal = dat1
                             busqueda = 1
                     elif busqueda == 1:
-                        contenidoy.append(float(linea[18:26]))
+                        
                         dat1 = fdat(linea[0:17])
+
                         dat2 = fdat(datofin)
                         dfin = dat2
-                        # if linea[0:17] < datofin:
 
                         if dat2 < dat1:
                             break
                             busqueda = 2
                         else:
-                            datx = fdat(linea[0:17])
-                            puntosx.append(datx)
+                            pasador = True
+                            asignainicio = True
+                            cuenta = 0
+                            # print "antes de"
+                            while pasador:
+                                cuenta =+ 1
+                                if asignainicio:
+                                    dattempinicio = dattempfinal
+                                    dattempiniciox = datetime.datetime.strptime(dattempinicio, '%Y-%m-%d %H:%M:%S')
+                                    asignainicio = False
+                                else:
+                                    dattempiniciox = dattempiniciox + datetime.timedelta(seconds=30.0) 
+
+                                datoyinicio = datoyfinal
+                                datoyfinal = float(linea[18:26])
+
+                                dattempfinal = dat1
+                                dattempfinalx = datetime.datetime.strptime(dattempfinal, '%Y-%m-%d %H:%M:%S')
+                                # print dattempiniciox
+                                # print dattempfinalx
+                                # print datoyfinal
+                                
+                                # totalfinal = 130.0
+                                totalfinal  = (dattempfinalx - dattempiniciox).total_seconds()
+                                # print totalfinal
+                                # print " - "
+                                # print raw_input()
+                                if totalfinal <=  200.0:
+                                    puntosx.append(dattempinicio)
+                                    pasador = False
+                                    contenidoy.append(datoyfinal)
+                                else:
+                                    puntosx.append(dattempinicio)
+                                    contenidoy.append(datoyinicio)
+                                    nopasa = False
 
                     else:
                         break
-            if len(puntosx) > maximopunto:
-                maximopunto = len(puntosx)
+            print "maximo: %s " % maximopunto
+            print len(puntosx)
+            print len(contenidoy)
+            # print "parar"
+            # print raw_input()
+
 
         # ------- FIN
-        for ah in range(0, total):
+            #  try:
+            #     allenar = maximopunto - len(puntosx)
+            #     ultimoallenarx = puntosx[len(puntosx) - 1]
 
-            busqueda = 0  # 0 dato inicial #1 dato final
-            puntosx = []
-            contenidoy = []
-            #leer los archivos de las curvas y generar lista de puntos
-            f = open(curvas[ah])
-            i = 0
-
-            for linea in f:
-                if linea[0:1] != "N":
-                    if busqueda == 0:
-                        dat1 = fdat(linea[0:17])
-                        dat2 = fdat(datoinicio)
-                        dinicio = dat2
-                        if dat2 <= dat1:
-                            puntosx.append(dat1)
-                            # print dat1
-                            busqueda = 1
-                    elif busqueda == 1:
-                        contenidoy.append(float(linea[18:26]))
-                        dat1 = fdat(linea[0:17])
-                        dat2 = fdat(datofin)
-                        dfin = dat2
-                        # if linea[0:17] < datofin:
-
-                        if dat2 < dat1:
-                            break
-                            busqueda = 2
-                        else:
-                            datx = fdat(linea[0:17])
-                            puntosx.append(datx)
-
-                    else:
-                        break
-            try:
-                allenar = maximopunto - len(puntosx)
-                ultimoallenarx = puntosx[len(puntosx) - 1]
-
-                ultimoallenary = contenidoy[len(contenidoy) - 1]
-                for w in range(0, allenar):
-                    puntosx.append(ultimoallenarx)
-                    contenidoy.append(ultimoallenary)
-            except:
-                pass
+            #     ultimoallenary = contenidoy[len(contenidoy) - 1]
+            #     for w in range(0, allenar):
+            #         puntosx.append(ultimoallenarx)
+            #         contenidoy.append(ultimoallenary)
+            # except:
+            #     pass
             macroy.append(contenidoy)
             contenidox = map(lambda s: time.mktime(
                         datetime.datetime.strptime(s,
@@ -216,15 +263,8 @@ def principal(datoinicio, datofin, datdic):
 
             xxy = [dt.datetime.strptime(dax, '%Y-%m-%d %H:%M:%S')
                                             for dax in puntosx]
-            # if ah == 0:
-
             p.update({"p%s" % (str(ah + 1)): par['host'].plot(contx,
                     contenidoy, colores[ah], label=datocurva[0])})
-
-            # else:
-            #     p.update({"p%s" % (str(ah + 1)): par['par%s' % (str(ah))].
-                # plot(contenidox,
-            #         contenidoy, colores[ah], label=datocurva[0])})
         #MIN Y MAX DE LAS Y
         # par["host"].xaxis.set_major_formatter(mdates.DateFormatter
             # ('%Y-%m-%d %H:%M:%S'))
